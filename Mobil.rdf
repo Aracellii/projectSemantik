@@ -163,22 +163,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#BoxTruck -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#BoxTruck">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Truck"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#DumpTruck -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#DumpTruck">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Truck"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Kelistrikan -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Kelistrikan">
@@ -190,14 +174,6 @@
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#KomponenMobil -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#KomponenMobil"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MPV -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MPV">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
-    </owl:Class>
     
 
 
@@ -261,42 +237,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#SUV -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#SUV">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Sedan -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Sedan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#TankTruck -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#TankTruck">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Truck"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Transmisi -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Transmisi">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#KomponenMobil"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Tronton -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Tronton">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Truck"/>
     </owl:Class>
     
 
@@ -358,6 +302,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#BoxTruck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#BoxTruck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Truck"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Cherry -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Cherry">
@@ -374,10 +326,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#DoubleCabin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#DoubleCabin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#PickUp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#DumpTruck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#DumpTruck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Truck"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Electric -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Electric">
         <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#bahanBakar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Hatchback -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Hatchback">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
     </owl:NamedIndividual>
     
 
@@ -414,6 +390,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#LCGC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#LCGC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MPV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MPV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Mazda -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Mazda">
@@ -430,6 +422,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#SUV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#SUV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Sedan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Sedan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#SingleCabin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#SingleCabin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#PickUp"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Solar -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Solar">
@@ -438,10 +454,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Sports_Car -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Sports_Car">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MobilPenumpang"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#TankTruck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#TankTruck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Truck"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Toyota -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Toyota">
         <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#MerekMobil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Tronton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Tronton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Truck"/>
     </owl:NamedIndividual>
     
 
