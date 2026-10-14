@@ -524,6 +524,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Daihatsu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Daihatsu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#Daihatsu"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#GranMax_BlindVan_01 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/8/Mobil#GranMax_BlindVan_01">
