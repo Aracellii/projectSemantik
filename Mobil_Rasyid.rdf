@@ -9,7 +9,7 @@
      xmlns:untitled-ontology-8="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8">
         <rdfs:label xml:lang="id">Ontologi Mobil - 20 Instance DumpTruck sampai Tronton</rdfs:label>
-        <rdfs:comment xml:lang="id">Salinan mobil final.rdf dengan total 20 individual kendaraan pada empat kelas tugas: DumpTruck, TankTruck, TrailerTruck, dan Tronton, masing-masing lima. Empat contoh lama pada kelas tersebut diperbarui penamaan dan datanya; ditambahkan 16 contoh kendaraan lain. Data kelas dan individual di luar bagian tugas dipertahankan. Ditambahkan dua jenis rem dan satu fitur ABS sebagai individual pendukung. Model kendaraan dan angka kapasitas mesin merujuk sumber pabrikan yang dicantumkan melalui rdfs:seeAlso. Harga, tahun produksi, jumlah penumpang, dan kapasitas muatan pada 20 contoh tugas ini sengaja tidak diisi tanpa sumber terverifikasi. Identitas ontologi dan namespace asli dipertahankan agar seluruh hubungan tetap selaras.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Revisi 19 Oktober 2026 untuk total 20 contoh individual kendaraan: DumpTruck, TankTruck, TrailerTruck, Tronton masing-masing lima. Semua memiliki namaMobil, harga, jumlahPenumpang, kapasitasAngkutan, kapasitasMesin, tahunProduksi, HP, dan isLCGC. Rupiah digunakan untuk harga, kg muatan untuk kapasitasAngkutan, cc untuk kapasitasMesin, orang termasuk pengemudi untuk jumlahPenumpang, mechanical horsepower untuk HP. Data nama dan mesin mengacu pada katalog; harga kendaraan lengkap adalah ESTIMASI skenario, tahun dan jumlah penumpang adalah ASUMSI contoh unit, serta payload merupakan HASIL HITUNG konfigurasi hipotetis. Penjelasan per nilai ada pada anotasi assertion, bukan klaim seluruh nilai adalah spesifikasi resmi atau rekam unit nyata. Ron tidak berlaku pada contoh diesel dan tidak diberi nilai nol; Mobil merupakan properti pengelompokan. Hierarki kelas, object properties, nama/IRI 20 kendaraan, seluruh relasi kendaraan, dan pekerjaan anggota lain dipertahankan.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -1456,8 +1456,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitsubishi Fuso Canter FE 74 HD Dump Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3907</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Mitsubishi Fuso Canter FE 74 HD Dump Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin 4V21-2AT1; transmisi M035S5. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri dump; volume bak dan berat muatan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin 4V21-2AT1; transmisi M035S5. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis dealer Rp512000000 OTR Jawa Barat, belum termasuk karoseri; bodi dump Rp100000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 3 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 4000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 8250 kg - asumsi massa sasis 2530 kg - asumsi massa bodi/trailer 1200 kg - asumsi massa penghuni 225 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 136 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/canter-fe-74-hd/"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">612000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">134.14</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishi-srikandi.com/fuso/light-duty/canter-fe-74-hd"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDDumpTruck">
@@ -1478,8 +1486,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FM 280 JD Dump Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FM 280 JD Dump Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri dump; volume bak dan berat muatan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FM 280 JD Rp1238000000; bodi dump Rp200000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 14000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 7635 kg - asumsi massa bodi/trailer 4000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 280 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/fm-280-jd-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1438000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDABSDumpTruck">
@@ -1502,8 +1518,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FM 280 JD ABS Dump Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FM 280 JD ABS Dump Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri dump; volume bak dan berat muatan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FM 280 JD ABS Rp1288000000; bodi dump Rp200000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 14000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 7635 kg - asumsi massa bodi/trailer 4000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 280 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-abs-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1488000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDRMiningDumpTruck">
@@ -1524,8 +1548,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FM 280 JD R Mining Dump Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FM 280 JD R Mining Dump Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri dump; volume bak dan berat muatan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi varian FM 280 JD Mining Retarder Rp1450000000; pemetaan ke konfigurasi R Mining dan bodi dump Rp250000000 merupakan asumsi dataset. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 13000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 8000 kg - asumsi massa bodi/trailer 4500 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 280 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-r-mining-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1700000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FHDRMiningDumpTruck">
@@ -1546,8 +1578,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitsubishi Fuso Fighter X FN62F HD R Mining Dump Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7545</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Mitsubishi Fuso Fighter X FN62F HD R Mining Dump Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin 6M60-DAT6; transmisi EATON ES-11109. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri dump; volume bak dan berat muatan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas DumpTruck. Mesin 6M60-DAT6; transmisi EATON ES-11109. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi FN62F HD R standar Rp1318300000; tambahan paket mining dan bodi dump total Rp300000000 adalah asumsi, bukan harga resmi varian Mining Equipment. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 13500 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 7375 kg - asumsi massa bodi/trailer 4500 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 270 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn62f-hd-r-mining-equipment/"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1618300000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13500</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266.31</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishidipogatsu.com/model/36/fighter-x"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HinoDutro130HDLSDTankTruck">
@@ -1568,8 +1608,15 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino Dutro 130 HD LSD Tank Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4009</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino Dutro 130 HD LSD Tank Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin W04D-TR; transmisi RE50. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri tangki pada sasis model tersebut; jenis cairan dan volume tangki angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin W04D-TR; transmisi RE50. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Asumsi contoh sasis bekas tahun 2021 Rp300000000 dan bodi tangki Rp80000000; tidak tersedia kutipan harga terverifikasi untuk contoh unit ini. Tahun 2021 dan jumlah penghuni kabin 3 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 4000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 8250 kg - asumsi massa sasis 2355 kg - asumsi massa bodi/trailer 1200 kg - asumsi massa penghuni 225 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 130 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/1/130-hd-lsd-euro2"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">128.22</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKTankTruck">
@@ -1590,8 +1637,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FG 260 JK Tank Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FG 260 JK Tank Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri tangki pada sasis model tersebut; jenis cairan dan volume tangki angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FG 260 JK Rp861000000; bodi tangki Rp150000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 8000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 16000 kg - asumsi massa sasis 5480 kg - asumsi massa bodi/trailer 2000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 260 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1011000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKABSTankTruck">
@@ -1614,8 +1669,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FG 260 JK ABS Tank Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FG 260 JK ABS Tank Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri tangki pada sasis model tersebut; jenis cairan dan volume tangki angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FG 260 JK ABS Rp918000000; bodi tangki Rp150000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 8000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 16000 kg - asumsi massa sasis 5480 kg - asumsi massa bodi/trailer 2000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 260 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-abs-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1068000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JLTankTruck">
@@ -1636,8 +1699,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FG 260 JL Tank Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FG 260 JL Tank Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri tangki pada sasis model tersebut; jenis cairan dan volume tangki angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FG 260 JL Rp863000000; bodi tangki Rp170000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 8000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 16000 kg - asumsi massa sasis 5520 kg - asumsi massa bodi/trailer 2100 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 260 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jl-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1033000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTankTruck">
@@ -1658,8 +1729,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FL 260 JW Tank Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FL 260 JW Tank Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi karoseri tangki pada sasis model tersebut; jenis cairan dan volume tangki angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TankTruck. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FL 260 JW Euro4 Rp1018000000; bodi tangki Rp200000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 14500 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 7460 kg - asumsi massa bodi/trailer 3500 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 260 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1218000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14500</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG260THABSTrailerTruck">
@@ -1682,8 +1761,15 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 SG 260 TH ABS Trailer Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 SG 260 TH ABS Trailer Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin J08E-UF; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi tractor head penarik trailer; spesifikasi mesin adalah milik tractor head, bukan unit trailer tanpa mesin.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin J08E-UF; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Asumsi contoh tractor head bekas tahun 2021 Rp650000000 dan trailer Rp250000000; bukan kutipan harga transaksi unit nyata. Tahun 2021 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 22000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 34000 kg - asumsi massa sasis 5660 kg - asumsi massa bodi/trailer 6000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 260 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/sg-260-th-new-complete-with-abs-system"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG280THTrailerTruck">
@@ -1704,8 +1790,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 SG 280 TH Trailer Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 SG 280 TH Trailer Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi tractor head penarik trailer; spesifikasi mesin adalah milik tractor head, bukan unit trailer tanpa mesin.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi tractor head SG 280 TH Rp1013000000; trailer Rp250000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 24500 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 37000 kg - asumsi massa sasis 5960 kg - asumsi massa bodi/trailer 6000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 280 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/sg-280-th-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1263000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24500</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280THTrailerTruck">
@@ -1726,8 +1820,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FM 280 TH Trailer Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FM 280 TH Trailer Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi tractor head penarik trailer; spesifikasi mesin adalah milik tractor head, bukan unit trailer tanpa mesin.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi tractor head FM 280 TH Rp1259000000; trailer Rp250000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 23500 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 38000 kg - asumsi massa sasis 7615 kg - asumsi massa bodi/trailer 6500 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 280 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-th-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1509000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23500</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FTHTrailerTruck">
@@ -1748,8 +1850,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitsubishi Fuso Fighter X FN62F TH Trailer Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7545</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Mitsubishi Fuso Fighter X FN62F TH Trailer Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin 6M60-DAT6; transmisi EATON ES-11109. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi tractor head penarik trailer; spesifikasi mesin adalah milik tractor head, bukan unit trailer tanpa mesin.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin 6M60-DAT6; transmisi EATON ES-11109. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi tractor head FN62F TH Rp1555000000 sebelum pajak/perizinan menurut dealer; trailer Rp250000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 21500 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 36000 kg - asumsi massa sasis 7600 kg - asumsi massa bodi/trailer 6500 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 270 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-62-f-tractor-head/"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1805000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21500</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266.31</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fn62f-th/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFM65FTHTrailerTruck">
@@ -1770,8 +1880,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitsubishi Fuso Fighter X FM65F TH Trailer Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7545</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Mitsubishi Fuso Fighter X FM65F TH Trailer Truck</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin 6M60-DAT6; transmisi EATON ES-11109. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Individual ini mewakili konfigurasi tractor head penarik trailer; spesifikasi mesin adalah milik tractor head, bukan unit trailer tanpa mesin.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas TrailerTruck. Mesin 6M60-DAT6; transmisi EATON ES-11109. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi tractor head FM65F TH Rp1174500000 menurut dealer; trailer Rp250000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 24000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 36000 kg - asumsi massa sasis 4875 kg - asumsi massa bodi/trailer 6500 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 270 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fm65-th/"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1424500000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266.31</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fm65f-th/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#IsuzuGigaFVMNHPABSTronton">
@@ -1794,9 +1912,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isuzu Giga FVM N HP ABS Tronton</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7790</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Isuzu Giga FVM N HP ABS Tronton</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin 6HK1-TCS; transmisi ES11109DD. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Konfigurasi sasis tiga sumbu 6x2; bentuk karoseri angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin 6HK1-TCS; transmisi ES11109DD. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Asumsi harga sasis Rp1050000000 dan bodi kargo Rp150000000 untuk contoh dataset; bukan harga resmi atau harga transaksi terverifikasi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 15500 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 6900 kg - asumsi massa bodi/trailer 3000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 285 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://isuzu-astra.com/giga-fvm/"/>
         <rdfs:seeAlso rdf:resource="https://isuzu-astra.com/wp-content/uploads/2022/04/BROSUR_EURO4-FVM.pdf"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15500</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">281.10</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JNTronton">
@@ -1817,8 +1942,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FL 260 JN Tronton</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FL 260 JN Tronton</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Konfigurasi sasis tiga sumbu 6x2; bentuk karoseri angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FL 260 JN Rp1006000000; bodi kargo Rp150000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 15500 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 7165 kg - asumsi massa bodi/trailer 3000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 260 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jn-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1156000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15500</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTronton">
@@ -1839,8 +1972,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FL 260 JW Tronton</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FL 260 JW Tronton</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Konfigurasi sasis tiga sumbu 6x2; bentuk karoseri angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin J08E-WE; transmisi MX07. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FL 260 JW Euro4 Rp1018000000; bodi kargo Rp150000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 15000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 7460 kg - asumsi massa bodi/trailer 3000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 260 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1168000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL280JWTronton">
@@ -1861,8 +2002,16 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hino 500 FL 280 JW Tronton</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7684</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Hino 500 FL 280 JW Tronton</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Konfigurasi sasis tiga sumbu 6x2; bentuk karoseri angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin J08E-WD; transmisi M009DD. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FL 280 JW Rp1045000000; bodi kargo Rp150000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 15000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 7600 kg - asumsi massa bodi/trailer 3000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 280 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-280-jw-euro4"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1195000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
     </owl:NamedIndividual>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN61FLHDRTronton">
@@ -1883,9 +2032,797 @@
         <untitled-ontology-8:namaMobil rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitsubishi Fuso Fighter X FN61FL HD R Tronton</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7545</untitled-ontology-8:kapasitasMesin>
         <rdfs:label xml:lang="id">Mitsubishi Fuso Fighter X FN61FL HD R Tronton</rdfs:label>
-        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin 6M60-DAT6; transmisi EATON ES-11109. Kapasitas mesin dinyatakan dalam cc. Sumber spesifikasi diperiksa pada 18 Oktober 2026. Pemetaan ladder frame merupakan interpretasi struktur sasis truk pada sumber pabrikan, disesuaikan dengan kosakata ontologi awal. Harga, tahun produksi unit, jumlah penumpang, dan kapasitas muatan tidak diisi karena belum diverifikasi. GVW/GCW dan kapasitas tangki bahan bakar tidak dipakai sebagai kapasitas muatan. Nilai kosong berarti belum diketahui, bukan nol. Konfigurasi sasis tiga sumbu 6x2; bentuk karoseri angkutan tidak ditentukan.</rdfs:comment>
+        <rdfs:comment xml:lang="id">Contoh individual konfigurasi kendaraan untuk kelas Tronton. Mesin 6M60-DAT6; transmisi EATON ES-11109. Kapasitas mesin dinyatakan dalam cc. Revisi data properties 19 Oktober 2026. Enam properti utama telah terisi: namaMobil (teks), harga (rupiah), jumlahPenumpang (orang, termasuk pengemudi), kapasitasAngkutan (kg muatan), kapasitasMesin (cc), tahunProduksi (tahun). PENTING: contoh ini merupakan konfigurasi unit hipotetis untuk latihan ontologi. Harga adalah estimasi skenario sasis/tractor head ditambah anggaran bodi/trailer; bukan penawaran resmi kendaraan lengkap. Referensi sasis/model FN61FL HD R Rp1181000000 sebelum pajak/perizinan menurut dealer; bodi kargo Rp150000000 adalah asumsi. Tahun 2025 dan jumlah penghuni kabin 2 merupakan asumsi contoh unit, bukan hasil verifikasi nomor rangka/STNK. Kapasitas muatan 15000 kg adalah hasil hitung skenario, bukan kapasitas resmi: batas bruto referensi/skenario 26000 kg - asumsi massa sasis 7450 kg - asumsi massa bodi/trailer 3000 kg - asumsi massa penghuni 150 kg, dibulatkan turun ke kelipatan 500 kg. Untuk TrailerTruck, batas bruto mengacu pada kombinasi tractor head dan trailer. Untuk TankTruck, kapasitasAngkutan tetap dalam kg muatan, bukan liter tangki bahan bakar; jenis dan densitas cairan tidak ditetapkan. HP adalah hasil konversi daya katalog 270 PS ke mechanical horsepower menggunakan faktor NIST, dibulatkan dua desimal; untuk Hino Euro4 dipilih daya ISO-NET bila tersedia. isLCGC=false. Ron tidak diisi karena bahan bakarnya solar; Mobil adalah properti pengelompokan pada skema awal. Spesifikasi mesin dan tautan pabrikan tetap dipertahankan. Anotasi masing-masing assertion menjelaskan status data.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-61-fl-hd-r/"/>
+        <untitled-ontology-8:harga rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1331000000</untitled-ontology-8:harga>
+        <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-8:jumlahPenumpang>
+        <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</untitled-ontology-8:kapasitasAngkutan>
+        <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:HP rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266.31</untitled-ontology-8:HP>
+        <untitled-ontology-8:isLCGC rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-8:isLCGC>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fn61fl-hd-r/"/>
     </owl:NamedIndividual>
+
+
+    <!-- Anotasi asal-usul nilai pada data property assertions. -->
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiCanterFE74HDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">612000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=512000000+100000000=612000000 rupiah. Referensi sasis dealer Rp512000000 OTR Jawa Barat, belum termasuk karoseri; bodi dump Rp100000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishi-srikandi.com/fuso/light-duty/canter-fe-74-hd"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiCanterFE74HDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 3 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiCanterFE74HDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((8250-2530-1200-225)//500)*500)=4000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/canter-fe-74-hd/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiCanterFE74HDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiCanterFE74HDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">134.14</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 136 PS x 735.4988 W/PS / 745.6999 W/hp = 134.14 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/canter-fe-74-hd/"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1438000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1238000000+200000000=1438000000 rupiah. Referensi sasis/model FM 280 JD Rp1238000000; bodi dump Rp200000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-7635-4000-150)//500)*500)=14000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/fm-280-jd-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 280 PS x 735.4988 W/PS / 745.6999 W/hp = 276.17 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/fm-280-jd-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDABSDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1488000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1288000000+200000000=1488000000 rupiah. Referensi sasis/model FM 280 JD ABS Rp1288000000; bodi dump Rp200000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDABSDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDABSDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-7635-4000-150)//500)*500)=14000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-abs-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDABSDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDABSDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 280 PS x 735.4988 W/PS / 745.6999 W/hp = 276.17 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-abs-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1700000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1450000000+250000000=1700000000 rupiah. Referensi varian FM 280 JD Mining Retarder Rp1450000000; pemetaan ke konfigurasi R Mining dan bodi dump Rp250000000 merupakan asumsi dataset. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-8000-4500-150)//500)*500)=13000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-r-mining-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 280 PS x 735.4988 W/PS / 745.6999 W/hp = 276.17 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-r-mining-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FHDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1618300000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1318300000+300000000=1618300000 rupiah. Referensi FN62F HD R standar Rp1318300000; tambahan paket mining dan bodi dump total Rp300000000 adalah asumsi, bukan harga resmi varian Mining Equipment. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishidipogatsu.com/model/36/fighter-x"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FHDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FHDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13500</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-7375-4500-150)//500)*500)=13500 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn62f-hd-r-mining-equipment/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FHDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FHDRMiningDumpTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266.31</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 270 PS x 735.4988 W/PS / 745.6999 W/hp = 266.31 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn62f-hd-r-mining-equipment/"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HinoDutro130HDLSDTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=300000000+80000000=380000000 rupiah. Asumsi contoh sasis bekas tahun 2021 Rp300000000 dan bodi tangki Rp80000000; tidak tersedia kutipan harga terverifikasi untuk contoh unit ini. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HinoDutro130HDLSDTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 3 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HinoDutro130HDLSDTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((8250-2355-1200-225)//500)*500)=4000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/1/130-hd-lsd-euro2"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HinoDutro130HDLSDTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2021; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HinoDutro130HDLSDTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">128.22</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 130 PS x 735.4988 W/PS / 745.6999 W/hp = 128.22 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/1/130-hd-lsd-euro2"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1011000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=861000000+150000000=1011000000 rupiah. Referensi sasis/model FG 260 JK Rp861000000; bodi tangki Rp150000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((16000-5480-2000-150)//500)*500)=8000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 260 PS x 735.4988 W/PS / 745.6999 W/hp = 256.44 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKABSTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1068000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=918000000+150000000=1068000000 rupiah. Referensi sasis/model FG 260 JK ABS Rp918000000; bodi tangki Rp150000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKABSTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKABSTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((16000-5480-2000-150)//500)*500)=8000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-abs-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKABSTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKABSTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 260 PS x 735.4988 W/PS / 745.6999 W/hp = 256.44 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-abs-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JLTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1033000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=863000000+170000000=1033000000 rupiah. Referensi sasis/model FG 260 JL Rp863000000; bodi tangki Rp170000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JLTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JLTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((16000-5520-2100-150)//500)*500)=8000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jl-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JLTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JLTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 260 PS x 735.4988 W/PS / 745.6999 W/hp = 256.44 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jl-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1218000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1018000000+200000000=1218000000 rupiah. Referensi sasis/model FL 260 JW Euro4 Rp1018000000; bodi tangki Rp200000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14500</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-7460-3500-150)//500)*500)=14500 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTankTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 260 PS x 735.4988 W/PS / 745.6999 W/hp = 256.44 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG260THABSTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=650000000+250000000=900000000 rupiah. Asumsi contoh tractor head bekas tahun 2021 Rp650000000 dan trailer Rp250000000; bukan kutipan harga transaksi unit nyata. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG260THABSTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG260THABSTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((34000-5660-6000-150)//500)*500)=22000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/sg-260-th-new-complete-with-abs-system"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG260THABSTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2021; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG260THABSTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 260 PS x 735.4988 W/PS / 745.6999 W/hp = 256.44 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/sg-260-th-new-complete-with-abs-system"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1263000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1013000000+250000000=1263000000 rupiah. Referensi tractor head SG 280 TH Rp1013000000; trailer Rp250000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24500</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((37000-5960-6000-150)//500)*500)=24500 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/sg-280-th-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 280 PS x 735.4988 W/PS / 745.6999 W/hp = 276.17 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/sg-280-th-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1509000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1259000000+250000000=1509000000 rupiah. Referensi tractor head FM 280 TH Rp1259000000; trailer Rp250000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23500</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((38000-7615-6500-150)//500)*500)=23500 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-th-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280THTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 280 PS x 735.4988 W/PS / 745.6999 W/hp = 276.17 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-th-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1805000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1555000000+250000000=1805000000 rupiah. Referensi tractor head FN62F TH Rp1555000000 sebelum pajak/perizinan menurut dealer; trailer Rp250000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fn62f-th/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21500</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((36000-7600-6500-150)//500)*500)=21500 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-62-f-tractor-head/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266.31</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 270 PS x 735.4988 W/PS / 745.6999 W/hp = 266.31 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-62-f-tractor-head/"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFM65FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1424500000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1174500000+250000000=1424500000 rupiah. Referensi tractor head FM65F TH Rp1174500000 menurut dealer; trailer Rp250000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fm65f-th/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFM65FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFM65FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((36000-4875-6500-150)//500)*500)=24000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fm65-th/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFM65FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFM65FTHTrailerTruck"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266.31</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 270 PS x 735.4988 W/PS / 745.6999 W/hp = 266.31 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fm65-th/"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#IsuzuGigaFVMNHPABSTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1050000000+150000000=1200000000 rupiah. Asumsi harga sasis Rp1050000000 dan bodi kargo Rp150000000 untuk contoh dataset; bukan harga resmi atau harga transaksi terverifikasi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#IsuzuGigaFVMNHPABSTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#IsuzuGigaFVMNHPABSTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15500</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-6900-3000-150)//500)*500)=15500 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://isuzu-astra.com/giga-fvm/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#IsuzuGigaFVMNHPABSTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#IsuzuGigaFVMNHPABSTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">281.10</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 285 PS x 735.4988 W/PS / 745.6999 W/hp = 281.10 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://isuzu-astra.com/giga-fvm/"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JNTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1156000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1006000000+150000000=1156000000 rupiah. Referensi sasis/model FL 260 JN Rp1006000000; bodi kargo Rp150000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JNTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JNTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15500</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-7165-3000-150)//500)*500)=15500 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jn-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JNTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JNTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 260 PS x 735.4988 W/PS / 745.6999 W/hp = 256.44 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jn-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1168000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1018000000+150000000=1168000000 rupiah. Referensi sasis/model FL 260 JW Euro4 Rp1018000000; bodi kargo Rp150000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-7460-3000-150)//500)*500)=15000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256.44</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 260 PS x 735.4988 W/PS / 745.6999 W/hp = 256.44 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL280JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1195000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1045000000+150000000=1195000000 rupiah. Referensi sasis/model FL 280 JW Rp1045000000; bodi kargo Rp150000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL280JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL280JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-7600-3000-150)//500)*500)=15000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-280-jw-euro4"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL280JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL280JWTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.17</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 280 PS x 735.4988 W/PS / 745.6999 W/hp = 276.17 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-280-jw-euro4"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN61FLHDRTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#harga"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1331000000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ESTIMASI DATASET, bukan kutipan harga kendaraan lengkap. harga=1181000000+150000000=1331000000 rupiah. Referensi sasis/model FN61FL HD R Rp1181000000 sebelum pajak/perizinan menurut dealer; bodi kargo Rp150000000 adalah asumsi. Referensi diakses 19 Oktober 2026; basis pajak, wilayah, dan karoseri dapat berbeda.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fn61fl-hd-r/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN61FLHDRTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#jumlahPenumpang"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI contoh unit: 2 orang termasuk pengemudi; bukan kapasitas kursi tersertifikasi yang diverifikasi. Untuk hitung skenario dipakai 75 kg per orang.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN61FLHDRTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#kapasitasAngkutan"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL HITUNG SKENARIO, bukan rating muatan resmi. Muatan=(((26000-7450-3000-150)//500)*500)=15000 kg. Batas bruto referensi/skenario, massa sasis dan bodi/trailer konfigurasi contoh, serta massa penghuni digunakan untuk latihan; pembatasan beban sumbu dan dokumen pengujian tipe belum diperhitungkan. GVW/GCW tidak diisikan langsung sebagai payload.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-61-fl-hd-r/"/>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN61FLHDRTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">ASUMSI tahun contoh unit hipotetis: 2025; bukan tahun produksi unit nyata yang dibuktikan nomor rangka atau dokumen kendaraan.</rdfs:comment>
+    </owl:Axiom>
+
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN61FLHDRTronton"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266.31</owl:annotatedTarget>
+        <rdfs:comment xml:lang="id">HASIL KONVERSI: 270 PS x 735.4988 W/PS / 745.6999 W/hp = 266.31 mechanical hp. Daya PS merujuk katalog pabrikan; faktor konversi merujuk NIST.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-61-fl-hd-r/"/>
+        <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+    </owl:Axiom>
 
 </rdf:RDF>
 
