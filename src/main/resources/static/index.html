@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic Web Ontologi Mobil</title><link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header><div><p class="eyebrow">ONTOLOGY EXPLORER</p><h1>Semantic Web Ontologi Mobil</h1><p>Eksplorasi Data Mobil Berbasis Ontologi</p></div><div class="count"><strong id="total">—</strong><span>individu mobil</span></div></header>
+<main>
+  <section class="filters"><label>Pencarian<input id="search" type="search" placeholder="Cari nama mobil..."></label><label>Kategori<select id="category"><option value="">Semua kategori</option></select></label><label>Merk<select id="brand"><option value="">Semua merk</option></select></label><label>Bahan bakar<select id="fuel"><option value="">Semua bahan bakar</option></select></label><button id="reset">Reset filter</button></section>
+  <div class="workspace"><aside class="sidebar"><div class="sidebar-title"><h2>Daftar mobil</h2><span id="shown">0</span></div><div id="car-list" class="car-list"><p class="muted">Memuat ontology...</p></div></aside>
+    <section id="detail" class="detail"><div class="empty"><span>◇</span><h2>Pilih mobil untuk mulai menjelajah</h2><p>Setiap data diambil langsung dari graph RDF ontology.</p></div></section>
+  </div>
+</main><script src="/js/app.js"></script>
+</body></html>
