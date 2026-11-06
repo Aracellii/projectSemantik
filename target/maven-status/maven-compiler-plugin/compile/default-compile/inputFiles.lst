@@ -1,5 +1,2 @@
 /home/aracelli/Kuliah/Semester7/WebSemantik/projectSemantik/src/main/java/com/ontologimobil/Application.java
-/home/aracelli/Kuliah/Semester7/WebSemantik/projectSemantik/src/main/java/com/ontologimobil/controller/MobilController.java
-/home/aracelli/Kuliah/Semester7/WebSemantik/projectSemantik/src/main/java/com/ontologimobil/model/Mobil.java
-/home/aracelli/Kuliah/Semester7/WebSemantik/projectSemantik/src/main/java/com/ontologimobil/model/TripleData.java
-/home/aracelli/Kuliah/Semester7/WebSemantik/projectSemantik/src/main/java/com/ontologimobil/service/OntologyService.java
+/home/aracelli/Kuliah/Semester7/WebSemantik/projectSemantik/src/main/java/com/ontologimobil/MobilController.java

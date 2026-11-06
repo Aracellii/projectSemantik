@@ -1,5 +1,4 @@
+com/ontologimobil/MobilController.class
 com/ontologimobil/Application.class
-com/ontologimobil/model/Mobil.class
-com/ontologimobil/model/TripleData.class
-com/ontologimobil/controller/MobilController.class
-com/ontologimobil/service/OntologyService.class
+com/ontologimobil/MobilController$TripleData.class
+com/ontologimobil/MobilController$Mobil.class
