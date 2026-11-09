@@ -208,6 +208,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#foto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#foto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Mobil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#gambar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#gambar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Mobil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#namaMobil -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#namaMobil">
@@ -837,6 +855,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1493</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki APV Arena Blind Van</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/APVBlindVan.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/APVBlindVan.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -909,6 +929,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>BMW 330i M Sport Pro</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/BMW_330i_MSport.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/BMW_330i_MSport.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -939,6 +961,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2993</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>BMW M4 Competition</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/BMW_M4_Competition.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/BMW_M4_Competition.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -989,6 +1013,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1462</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki Carry Blind Van</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/CarryBlindVan.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/CarryBlindVan.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1015,6 +1041,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1462</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki Carry Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/CarryPickUp.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/CarryPickUp.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1070,6 +1098,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Ayla 1.2 R</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Daihatsu_Ayla_12_R.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Daihatsu_Ayla_12_R.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1097,6 +1127,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Gran Max Minibus 1.5 D</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Daihatsu_GranMax_MB.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Daihatsu_GranMax_MB.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1126,6 +1158,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1197</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Sigra 1.2 R AT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Daihatsu_Sigra.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Daihatsu_Sigra.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1176,6 +1210,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4009</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hino Dutro 110 SDL Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Dutro110BoxTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Dutro110BoxTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1202,6 +1238,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4009</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hino Dutro 130 HD Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/DutroBoxTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/DutroBoxTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1245,6 +1283,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2999</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Isuzu Elf NMR 71 Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/ElfNMRBoxTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/ElfNMRBoxTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1271,6 +1311,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1206</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Wuling Formo Blind Van</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/FormoBlindVan.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/FormoBlindVan.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1308,6 +1350,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3908</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mitsubishi Colt Diesel Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/FusoColtDieselBoxTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/FusoColtDieselBoxTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1344,6 +1388,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1499</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Granmax Blind Van</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/GrandmaxBlindVan.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/GrandmaxBlindVan.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1370,6 +1416,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1495</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Gran Max Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/GrandmaxBoxTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/GrandmaxBoxTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1396,6 +1444,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1495</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Gran Max Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/GrandmaxPickUp.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/GrandmaxPickUp.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1422,6 +1472,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2393</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Hilux Single Cab Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/HiluxSingleCabPickUp.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/HiluxSingleCabPickUp.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -1471,6 +1523,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-abs-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FG260JKABSTankTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FG260JKABSTankTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKABSTankTruck"/>
@@ -1542,6 +1596,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FG260JKTankTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FG260JKTankTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKTankTruck"/>
@@ -1613,6 +1669,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jl-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FG260JLTankTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FG260JLTankTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JLTankTruck"/>
@@ -1684,6 +1742,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jn-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FL260JNTronton.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FL260JNTronton.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JNTronton"/>
@@ -1755,6 +1815,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FL260JWTankTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FL260JWTankTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTankTruck"/>
@@ -1826,6 +1888,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FL260JWTronton.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FL260JWTronton.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTronton"/>
@@ -1897,6 +1961,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-280-jw-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FL280JWTronton.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FL280JWTronton.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL280JWTronton"/>
@@ -1970,6 +2036,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-abs-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FM280JDABSDumpTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FM280JDABSDumpTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDABSDumpTruck"/>
@@ -2041,6 +2109,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/fm-280-jd-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FM280JDDumpTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FM280JDDumpTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDDumpTruck"/>
@@ -2112,6 +2182,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-r-mining-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FM280JDRMiningDumpTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FM280JDRMiningDumpTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDRMiningDumpTruck"/>
@@ -2183,6 +2255,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-th-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FM280THTrailerTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500FM280THTrailerTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280THTrailerTruck"/>
@@ -2255,6 +2329,8 @@
         <rdfs:label xml:lang="id">Hino 500 SG 260 TH ABS Trailer Truck</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/sg-260-th-new-complete-with-abs-system"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500SG260THABSTrailerTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500SG260THABSTrailerTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG260THABSTrailerTruck"/>
@@ -2325,6 +2401,8 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/sg-280-th-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500SG280THTrailerTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hino500SG280THTrailerTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG280THTrailerTruck"/>
@@ -2395,6 +2473,8 @@
         <rdfs:label xml:lang="id">Hino Dutro 130 HD LSD Tank Truck</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/1/130-hd-lsd-euro2"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/HinoDutro130HDLSDTankTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/HinoDutro130HDLSDTankTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HinoDutro130HDLSDTankTruck"/>
@@ -2467,6 +2547,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda Brio RS CVT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_Brio_RS.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_Brio_RS.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2497,6 +2579,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1498</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda CR-V 1.5L Turbo</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_CRV_Turbo.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_CRV_Turbo.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2525,6 +2609,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda City Hatchback RS</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_City_Hatchback_RS.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_City_Hatchback_RS.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2554,6 +2640,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1498</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda Civic RS Turbo</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_Civic_RS.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_Civic_RS.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2584,6 +2672,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda HR-V 1.5 SE</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_HRV_SE.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_HRV_SE.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2614,6 +2704,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2356</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda Odyssey 2.4L Prestige</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_Odyssey.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Honda_Odyssey.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2680,6 +2772,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hyundai Creta Prime IVT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hyundai_Creta_Prime.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hyundai_Creta_Prime.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2710,6 +2804,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2199</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hyundai Palisade Signature</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hyundai_Palisade.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hyundai_Palisade.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2739,6 +2835,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hyundai Stargazer Prime</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hyundai_Stargazer_Prime.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hyundai_Stargazer_Prime.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2769,6 +2867,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2199</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hyundai Staria Signature 7</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hyundai_Staria.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Hyundai_Staria.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2818,6 +2918,8 @@
         <rdfs:seeAlso rdf:resource="https://isuzu-astra.com/giga-fvm/"/>
         <rdfs:seeAlso rdf:resource="https://isuzu-astra.com/wp-content/uploads/2022/04/BROSUR_EURO4-FVM.pdf"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/IsuzuGigaFVMNHPABSTronton.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/IsuzuGigaFVMNHPABSTronton.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#IsuzuGigaFVMNHPABSTronton"/>
@@ -2879,6 +2981,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1898</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Isuzu MU-X 1.9 4x4</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Isuzu_MUX.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Isuzu_MUX.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2913,6 +3017,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2477</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mitsubishi L300 Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/L300PickUp.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/L300PickUp.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -2984,6 +3090,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mazda 2 Hatchback GT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mazda_2_GT.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mazda_2_GT.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3013,6 +3121,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mazda 3 Sedan</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mazda_3_Sedan.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mazda_3_Sedan.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3041,6 +3151,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mazda CX-3 1.5 Sport</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mazda_CX3_Sport.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mazda_CX3_Sport.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3081,6 +3193,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2999</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mercedes-AMG GT 53 4MATIC+</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mercedes_AMG_GT.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mercedes_AMG_GT.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3111,6 +3225,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mercedes-Benz C 300 AMG Line</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mercedes_C300.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mercedes_C300.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3138,6 +3254,8 @@
         <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</untitled-ontology-8:kapasitasAngkutan>
         <untitled-ontology-8:namaMobil>Wuling Mitra EV</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitraBlindVan.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitraBlindVan.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3185,6 +3303,8 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/canter-fe-74-hd/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishi-srikandi.com/fuso/light-duty/canter-fe-74-hd"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiCanterFE74HDDumpTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiCanterFE74HDDumpTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiCanterFE74HDDumpTruck"/>
@@ -3256,6 +3376,8 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fm65-th/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fm65f-th/"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiFighterXFM65FTHTrailerTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiFighterXFM65FTHTrailerTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFM65FTHTrailerTruck"/>
@@ -3327,6 +3449,8 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-61-fl-hd-r/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fn61fl-hd-r/"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiFighterXFN61FLHDRTronton.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiFighterXFN61FLHDRTronton.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN61FLHDRTronton"/>
@@ -3398,6 +3522,8 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn62f-hd-r-mining-equipment/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishidipogatsu.com/model/36/fighter-x"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiFighterXFN62FHDRMiningDumpTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiFighterXFN62FHDRMiningDumpTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FHDRMiningDumpTruck"/>
@@ -3469,6 +3595,8 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-62-f-tractor-head/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fn62f-th/"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiFighterXFN62FTHTrailerTruck.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/MitsubishiFighterXFN62FTHTrailerTruck.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FTHTrailerTruck"/>
@@ -3533,6 +3661,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2442</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mitsubishi Pajero Sport Dakar</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mitsubishi_Pajero_Sport.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mitsubishi_Pajero_Sport.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3562,6 +3692,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mitsubishi Xpander Ultimate CVT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mitsubishi_Xpander_Ultimate.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Mitsubishi_Xpander_Ultimate.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3602,6 +3734,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2981</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Porsche 911 Carrera</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Porsche_911_Carrera.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Porsche_911_Carrera.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3674,6 +3808,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Subaru Crosstrek 2.0i-S</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Subaru_Crosstrek.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Subaru_Crosstrek.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3702,6 +3838,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2387</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Subaru BRZ 2.4 AT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Subaru_BRZ.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Subaru_BRZ.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3749,6 +3887,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki Baleno Hatchback</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Suzuki_Baleno.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Suzuki_Baleno.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3778,6 +3918,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki Ertiga Hybrid GX</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Suzuki_Ertiga_Hybrid.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Suzuki_Ertiga_Hybrid.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3807,6 +3949,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki S-Presso</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Suzuki_S_Presso.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Suzuki_S_Presso.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3847,6 +3991,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Agya 1.2 GR Sport</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Agya_GR_Sport.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Agya_GR_Sport.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3876,6 +4022,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Avanza 1.5 G CVT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Avanza_15_G.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Avanza_15_G.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3906,6 +4054,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2487</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Camry 2.5 Hybrid</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Camry_Hybrid.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Camry_Hybrid.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3936,6 +4086,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2755</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Fortuner 2.8 GR Sport</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Fortuner.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Fortuner.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3965,6 +4117,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2998</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota GR Supra</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_GR_Supra.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_GR_Supra.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -3993,6 +4147,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1987</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Kijang Innova Zenix Q HV</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Innova_Zenix.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Innova_Zenix.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -4023,6 +4179,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Yaris Cross 1.5 S HV</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Yaris_Cross_Hybrid.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Yaris_Cross_Hybrid.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -4051,6 +4209,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Yaris 1.5 GR Sport</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Yaris_GR_Sport.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Toyota_Yaris_GR_Sport.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -4077,6 +4237,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2499</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Isuzu Traga Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/TragaPickUp.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/TragaPickUp.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -4121,6 +4283,8 @@
         <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-8:jumlahPenumpang>
         <untitled-ontology-8:namaMobil>Wuling Air EV Long Range</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Wuling_Air_EV_Long_Range.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Wuling_Air_EV_Long_Range.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -4149,6 +4313,8 @@
         <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-8:jumlahPenumpang>
         <untitled-ontology-8:namaMobil>Wuling BinguoEV Premium Range</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Wuling_BinguoEV.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Wuling_BinguoEV.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
     
 
@@ -4179,6 +4345,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1451</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Wuling Cortez EX 1.5T</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+        <untitled-ontology-8:foto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Wuling_Cortez.jpg</untitled-ontology-8:foto>
+        <untitled-ontology-8:gambar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/Foto/Wuling_Cortez.jpg</untitled-ontology-8:gambar>
     </owl:NamedIndividual>
 </rdf:RDF>
 
