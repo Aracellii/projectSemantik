@@ -259,33 +259,145 @@ function renderList(cars) {
   });
 }
 
-// Refresh results from backend
-async function refreshResults() {
-  const request = ++state.request;
-  if (state.controller) state.controller.abort();
-  state.controller = new AbortController();
+const searchSynonyms = [
+  { terms: ['listrik', 'mobil listrik', 'electric', 'electric car', 'electric vehicle', 'ev', 'bev', 'baterai', 'battery electric'] },
+  { terms: ['hybrid', 'hibrida', 'mobil hybrid', 'hev', 'plug in hybrid', 'phev'] },
+  {
+    terms: ['keluarga', 'mobil keluarga', 'family car', 'mpv', 'minivan'],
+    matches: (car, haystack) => Number(car.properties?.jumlahPenumpang?.[0]) >= 5
+      || /\b(mpv|minivan|mobil penumpang)\b/.test(haystack)
+  },
+  { terms: ['matic', 'matik', 'otomatis', 'automatic', 'automatic transmission', 'transmisi otomatis', 'at'] },
+  { terms: ['manual', 'transmisi manual', 'mt'] },
+  { terms: ['bensin', 'petrol', 'gasoline', 'pertamax', 'pertalite'] },
+  { terms: ['solar', 'diesel', 'mesin diesel', 'minyak solar'] },
+  { terms: ['pickup', 'pick up', 'pick-up', 'bak terbuka', 'truk bak', 'mobil bak', 'l300', 'carry pickup'] },
+  { terms: ['dump truck', 'dump', 'truk jungkit', 'truk tambang'] },
+  { terms: ['tronton', 'truk tronton', 'heavy truck'] },
+  { terms: ['truck', 'truk', 'kendaraan niaga', 'mobil barang', 'mobil angkut', 'angkutan barang'] },
+  { terms: ['suv', 'sport utility', 'jeep', 'mobil suv'] },
+  { terms: ['sedan', 'mobil sedan'] }
+];
 
-  renderSkeletons();
+const ignoredSearchWords = new Set([
+  'mobil', 'kendaraan', 'yang', 'untuk', 'dengan', 'ada', 'berapa', 'carikan',
+  'cari', 'tolong', 'dong', 'harga', 'harganya', 'punya', 'pakai', 'menggunakan',
+  'di', 'buat', 'dan', 'atau', 'saya', 'ingin', 'mau', 'show', 'find', 'car'
+]);
 
-  try {
-    const cars = await api(`/api/mobil/search?${searchParams()}`, { signal: state.controller.signal });
-    if (request === state.request) {
-      renderList(cars);
-    }
-  } catch (error) {
-    if (error.name !== 'AbortError' && request === state.request) {
-      const box = $('#car-list');
-      if (box) {
-        box.innerHTML = `
-          <div class="empty-state" style="grid-column: 1 / -1;">
-            <div class="empty-icon-wrap" style="background:#fee2e2; color:#ef4444;">✕</div>
-            <h3>Pencarian Gagal</h3>
-            <p>Terjadi kesalahan saat mencari di ontology: ${error.message}</p>
-          </div>
-        `;
-      }
+function normalizeSearchText(value) {
+  return String(value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
+}
+
+function carSearchText(car) {
+  return ` ${normalizeSearchText([
+    car.name, car.brand, car.fuel, ...(car.categories || []),
+    ...Object.entries(car.properties || {}).flatMap(([key, values]) => [key, ...values])
+  ].flat().join(' '))} `;
+}
+
+function parsePriceAmount(numberText, unitText = '') {
+  const raw = numberText.trim();
+  const groupedThousands = /[.,]\d{3}(?:[.,]\d{3})*$/.test(raw);
+  const number = Number(groupedThousands ? raw.replace(/[.,]/g, '') : raw.replace(',', '.'));
+  const unit = normalizeSearchText(unitText);
+  const multiplier = /^(miliar|milyar|m)$/.test(unit) ? 1_000_000_000
+    : /^(juta|jt)$/.test(unit) ? 1_000_000
+      : /^(ribu|rb|k)$/.test(unit) ? 1_000 : 1;
+  return Number.isFinite(number) ? number * multiplier : null;
+}
+
+function extractPriceFilter(query) {
+  const amountPattern = '([0-9][0-9.,]*)(?:\\s*(miliar|milyar|juta|jt|ribu|rb|k)\\b)?';
+  const range = new RegExp(`antara\\s+${amountPattern}\\s+(?:sampai|hingga|dan|-)\\s+${amountPattern}`);
+  let match = query.match(range);
+  if (match) {
+    let min = parsePriceAmount(match[1], match[2]);
+    let max = parsePriceAmount(match[3], match[4]);
+    if (!match[2] && match[4]) min *= /^(miliar|milyar|m)$/.test(match[4]) ? 1_000_000_000
+      : /^(juta|jt)$/.test(match[4]) ? 1_000_000 : 1_000;
+    return { min, max, text: match[0] };
+  }
+
+  const amount = new RegExp(amountPattern);
+  match = amount.exec(query);
+  if (!match) return null;
+  const value = parsePriceAmount(match[1], match[2]);
+  if (value === null) return null;
+  const before = query.slice(Math.max(0, match.index - 35), match.index + match[0].length);
+  const after = query.slice(match.index + match[0].length, match.index + match[0].length + 25);
+  if (!match[2] && !/(harga|rupiah|rp|budget|anggaran|bujet|di bawah|dibawah|kurang dari|maksimal|max|paling banyak|di atas|diatas|lebih dari|minimal|min|paling sedikit|mulai dari|under|below|above|over)/.test(before)) return null;
+  if (/(kursi|penumpang|orang|seater)\s*$/.test(before)) return null;
+  if (/(di bawah|dibawah|kurang dari|maksimal|max|paling banyak|hingga|sampai|under|below|budget|anggaran|bujet)/.test(before)) {
+    return { max: value, text: match[0] };
+  }
+  if (/(di atas|diatas|lebih dari|minimal|min|paling sedikit|mulai dari|above|over)/.test(before)) {
+    return { min: value, text: match[0] };
+  }
+  if (/^(\s*(ke atas|atau lebih|plus))/.test(after)) return { min: value, text: match[0] };
+  return { max: value, text: match[0] };
+}
+
+function matchesSearchQuery(car, query) {
+  let remaining = normalizeSearchText(query);
+  const haystack = carSearchText(car);
+  const priceFilter = extractPriceFilter(remaining);
+  if (priceFilter) {
+    const price = Number(car.properties?.harga?.[0]);
+    if (!Number.isFinite(price)
+      || (priceFilter.min !== undefined && price < priceFilter.min)
+      || (priceFilter.max !== undefined && price > priceFilter.max)) return false;
+    remaining = remaining.replace(normalizeSearchText(priceFilter.text), ' ');
+    remaining = remaining.replace(/\b(antara|sampai|hingga|dan|di bawah|dibawah|kurang dari|maksimal|max|paling banyak|di atas|diatas|lebih dari|minimal|min|paling sedikit|mulai dari|ke atas|atau lebih|under|below|above|over|budget|anggaran|bujet|juta|jt|miliar|milyar|ribu|rb|rupiah|rp)\b/g, ' ');
+  }
+
+  const passengerMatch = remaining.match(/\b(\d+)\s*(kursi|penumpang|orang|seater)\b/);
+  if (passengerMatch) {
+    const seats = Number(car.properties?.jumlahPenumpang?.[0]);
+    if (!Number.isFinite(seats) || seats < Number(passengerMatch[1])) return false;
+    remaining = remaining.replace(passengerMatch[0], ' ');
+  }
+
+  const wantsCheapest = /\b(murah|termurah|paling murah|harga rendah|terjangkau|budget)\b/.test(remaining);
+  const wantsMostExpensive = /\b(termahal|paling mahal)\b/.test(remaining);
+  remaining = remaining.replace(/\b(murah|termurah|paling murah|harga rendah|mahal|termahal|paling mahal)\b/g, ' ');
+  const groups = [...searchSynonyms].sort((a, b) => Math.max(...b.terms.map(x => x.length)) - Math.max(...a.terms.map(x => x.length)));
+  for (const group of groups) {
+    const matchedTerms = group.terms.filter(term => new RegExp(`\\b${normalizeSearchText(term).replace(/ /g, '\\s+')}\\b`).test(remaining));
+    if (!matchedTerms.length) continue;
+    if (!matchedTerms.some(term => haystack.includes(normalizeSearchText(term)))
+      && !(group.matches && group.matches(car, haystack))) return false;
+    for (const term of matchedTerms) {
+      remaining = remaining.replace(new RegExp(`\\b${normalizeSearchText(term).replace(/ /g, '\\s+')}\\b`, 'g'), ' ');
     }
   }
+
+  const words = normalizeSearchText(remaining).split(' ').filter(word => word && !ignoredSearchWords.has(word));
+  if (words.some(word => !haystack.includes(word))) return false;
+  if (wantsCheapest && !(Number(car.properties?.harga?.[0]) > 0)) return false;
+  return !wantsMostExpensive || Number(car.properties?.harga?.[0]) > 0;
+}
+
+function refreshResults() {
+  const query = $('#search').value.trim();
+  const category = normalizeSearchText($('#category').value);
+  const brand = normalizeSearchText($('#brand').value);
+  const fuel = normalizeSearchText($('#fuel').value);
+  const cars = state.cars.filter(car => {
+    const categories = (car.categories || []).map(normalizeSearchText);
+    return (!category || categories.includes(category))
+      && (!brand || normalizeSearchText(car.brand) === brand)
+      && (!fuel || normalizeSearchText(car.fuel) === fuel)
+      && (!query || matchesSearchQuery(car, query));
+  });
+
+  if (/\b(murah|termurah|paling murah|terjangkau)\b/i.test(query)) {
+    cars.sort((a, b) => Number(a.properties?.harga?.[0] || Infinity) - Number(b.properties?.harga?.[0] || Infinity));
+  } else if (/\b(termahal|paling mahal)\b/i.test(query)) {
+    cars.sort((a, b) => Number(b.properties?.harga?.[0] || 0) - Number(a.properties?.harga?.[0] || 0));
+  }
+  renderList(cars);
 }
 
 // Select car and load details

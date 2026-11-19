@@ -56,7 +56,7 @@
             <circle cx="11" cy="11" r="8"/>
             <line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
-          <input id="search" type="search" placeholder="Cari nama, brand, jenis, atau sinonim (cth: L300, truk bak, EV, matic, mobil keluarga, bensin)..." autocomplete="off" list="search-hints">
+          <input id="search" type="search" placeholder="Cari mobil atau tanya, misalnya: di bawah 100 juta, 7 kursi, matic bensin..." autocomplete="off" list="search-hints">
           <datalist id="search-hints">
             <option value="L300">
             <option value="truk bak">
@@ -73,6 +73,14 @@
             <option value="Innova Zenix">
             <option value="Fortuner">
             <option value="Pajero">
+            <option value="mobil di bawah 100 juta">
+            <option value="mobil antara 100 sampai 200 juta">
+            <option value="mobil termurah">
+            <option value="mobil termahal">
+            <option value="mobil 7 kursi">
+            <option value="mobil keluarga matic">
+            <option value="SUV diesel">
+            <option value="mobil listrik murah">
           </datalist>
           <button id="clear-search" class="clear-btn" title="Hapus pencarian" type="button">&times;</button>
         </div>
@@ -111,7 +119,7 @@
 
       <!-- Quick Synonym Chips -->
       <div class="quick-tags">
-        <span class="quick-tags-label">Filter Cepat (SKOS Synonyms):</span>
+          <span class="quick-tags-label">Filter Cepat:</span>
         <div class="quick-tags-list">
           <button type="button" class="tag-chip" data-query="EV">⚡ Listrik / EV</button>
           <button type="button" class="tag-chip" data-query="mobil keluarga">👨‍👩‍👧 Mobil Keluarga</button>
@@ -124,6 +132,12 @@
           <button type="button" class="tag-chip" data-query="solar">🚜 Diesel / Solar</button>
           <button type="button" class="tag-chip" data-query="dump">⛏️ Dump Truck</button>
           <button type="button" class="tag-chip" data-query="tronton">🛣️ Tronton</button>
+          <button type="button" class="tag-chip" data-query="mobil di bawah 100 juta">💸 Di bawah 100 juta</button>
+          <button type="button" class="tag-chip" data-query="mobil antara 100 sampai 200 juta">💰 100–200 juta</button>
+          <button type="button" class="tag-chip" data-query="mobil termurah">📉 Termurah</button>
+          <button type="button" class="tag-chip" data-query="mobil termahal">📈 Termahal</button>
+          <button type="button" class="tag-chip" data-query="mobil 7 kursi">👥 7+ Kursi</button>
+          <button type="button" class="tag-chip" data-query="SUV diesel">🚙 SUV Diesel</button>
         </div>
       </div>
     </section>
