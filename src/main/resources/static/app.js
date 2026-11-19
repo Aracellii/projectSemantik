@@ -150,7 +150,7 @@ function renderList(cars) {
         </svg>
       </div>
       <h3>Tidak ada kendaraan yang cocok</h3>
-      <p>Coba gunakan kata kunci lain seperti "L300", "truk bak", "EV", "matic", atau klik tombol "Reset Filter".</p>
+      <p>Coba gunakan kata kunci lain seperti "pickup", "truk box", "EV", "matic", atau klik tombol "Reset Filter".</p>
     `;
     box.append(empty);
     return;
@@ -260,21 +260,41 @@ function renderList(cars) {
 }
 
 const searchSynonyms = [
-  { terms: ['listrik', 'mobil listrik', 'electric', 'electric car', 'electric vehicle', 'ev', 'bev', 'baterai', 'battery electric'] },
-  { terms: ['hybrid', 'hibrida', 'mobil hybrid', 'hev', 'plug in hybrid', 'phev'] },
+  {
+    terms: ['listrik', 'mobil listrik', 'electric', 'electric car', 'electric vehicle', 'ev', 'bev', 'baterai', 'battery electric'],
+    matches: car => normalizeSearchText(car.fuel) === 'listrik'
+  },
+  {
+    terms: ['hybrid', 'hibrida', 'mobil hybrid', 'hev', 'plug in hybrid', 'phev'],
+    matches: car => normalizeSearchText(car.fuel) === 'hybrid'
+  },
   {
     terms: ['keluarga', 'mobil keluarga', 'family car', 'mpv', 'minivan'],
     matches: (car, haystack) => Number(car.properties?.jumlahPenumpang?.[0]) >= 5
       || /\b(mpv|minivan|mobil penumpang)\b/.test(haystack)
   },
-  { terms: ['matic', 'matik', 'otomatis', 'automatic', 'automatic transmission', 'transmisi otomatis', 'at'] },
-  { terms: ['manual', 'transmisi manual', 'mt'] },
-  { terms: ['bensin', 'petrol', 'gasoline', 'pertamax', 'pertalite'] },
-  { terms: ['solar', 'diesel', 'mesin diesel', 'minyak solar'] },
-  { terms: ['pickup', 'pick up', 'pick-up', 'bak terbuka', 'truk bak', 'mobil bak', 'l300', 'carry pickup'] },
-  { terms: ['dump truck', 'dump', 'truk jungkit', 'truk tambang'] },
-  { terms: ['tronton', 'truk tronton', 'heavy truck'] },
-  { terms: ['truck', 'truk', 'kendaraan niaga', 'mobil barang', 'mobil angkut', 'angkutan barang'] },
+  {
+    terms: ['matic', 'matik', 'otomatis', 'automatic', 'automatic transmission', 'transmisi otomatis', 'at'],
+    matches: (car, haystack) => ['automatic', 'cvt', 'matic', 'otomatis', 'at']
+      .some(term => hasSearchTerm(haystack, term))
+  },
+  { terms: ['manual', 'transmisi manual', 'mt'], matches: (car, haystack) => hasSearchTerm(haystack, 'manual') },
+  { terms: ['bensin', 'petrol', 'gasoline', 'pertamax', 'pertalite'], matches: car => normalizeSearchText(car.fuel) === 'bensin' },
+  { terms: ['solar', 'diesel', 'mesin diesel', 'minyak solar'], matches: car => normalizeSearchText(car.fuel) === 'solar' },
+  {
+    terms: ['pickup', 'pick up', 'pick-up', 'pikap'],
+    matches: car => matchesCategory(car, 'pick up', 'pickup')
+  },
+  {
+    terms: ['truk box', 'truk boks', 'box truck', 'truck box'],
+    matches: car => matchesCategory(car, 'box truck', 'boxtruck')
+  },
+  { terms: ['dump truck', 'dump', 'truk jungkit', 'truk tambang'], matches: car => matchesCategory(car, 'dump truck', 'dumptruck') },
+  { terms: ['tronton', 'truk tronton', 'heavy truck'], matches: car => matchesCategory(car, 'tronton') },
+  {
+    terms: ['truck', 'truk', 'kendaraan niaga', 'mobil barang', 'mobil angkut', 'angkutan barang'],
+    matches: car => matchesCategory(car, 'box truck', 'boxtruck', 'dump truck', 'dumptruck', 'tank truck', 'tanktruck', 'trailer truck', 'trailertruck', 'tronton', 'truck')
+  },
   { terms: ['suv', 'sport utility', 'jeep', 'mobil suv'] },
   { terms: ['sedan', 'mobil sedan'] }
 ];
@@ -290,10 +310,24 @@ function normalizeSearchText(value) {
     .replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
 }
 
+function hasSearchTerm(text, term) {
+  const normalizedText = ` ${normalizeSearchText(text)} `;
+  const normalizedTerm = ` ${normalizeSearchText(term)} `;
+  return normalizedText.includes(normalizedTerm);
+}
+
+function matchesCategory(car, ...categories) {
+  const actual = (car.categories || []).map(normalizeSearchText);
+  return categories.some(category => actual.includes(normalizeSearchText(category)));
+}
+
 function carSearchText(car) {
+  const properties = Object.entries(car.properties || {})
+    .filter(([key]) => !['sameas', 'differentfrom', 'topdataproperty'].includes(normalizeSearchText(key)))
+    .flatMap(([key, values]) => [key, ...values]);
   return ` ${normalizeSearchText([
     car.name, car.brand, car.fuel, ...(car.categories || []),
-    ...Object.entries(car.properties || {}).flatMap(([key, values]) => [key, ...values])
+    ...properties
   ].flat().join(' '))} `;
 }
 
@@ -366,15 +400,15 @@ function matchesSearchQuery(car, query) {
   for (const group of groups) {
     const matchedTerms = group.terms.filter(term => new RegExp(`\\b${normalizeSearchText(term).replace(/ /g, '\\s+')}\\b`).test(remaining));
     if (!matchedTerms.length) continue;
-    if (!matchedTerms.some(term => haystack.includes(normalizeSearchText(term)))
-      && !(group.matches && group.matches(car, haystack))) return false;
+    if (group.matches ? !group.matches(car, haystack, matchedTerms)
+      : !matchedTerms.some(term => hasSearchTerm(haystack, term))) return false;
     for (const term of matchedTerms) {
       remaining = remaining.replace(new RegExp(`\\b${normalizeSearchText(term).replace(/ /g, '\\s+')}\\b`, 'g'), ' ');
     }
   }
 
   const words = normalizeSearchText(remaining).split(' ').filter(word => word && !ignoredSearchWords.has(word));
-  if (words.some(word => !haystack.includes(word))) return false;
+  if (words.some(word => !hasSearchTerm(haystack, word))) return false;
   if (wantsCheapest && !(Number(car.properties?.harga?.[0]) > 0)) return false;
   return !wantsMostExpensive || Number(car.properties?.harga?.[0]) > 0;
 }

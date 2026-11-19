@@ -37,4 +37,4 @@ src/main/resources/
 
 Frontend mengambil data langsung dari API, sehingga pencarian, filter, detail, spesifikasi, relasi, dan triple RDF berasal dari `mobil.owl`, bukan data hardcoded.
 
-Pencarian memahami sinonim umum kendaraan (misalnya EV/listrik, matic/otomatis, diesel/solar, pickup/truk bak) serta pertanyaan seperti `mobil di bawah 100 juta`, `antara 100 sampai 200 juta`, `mobil 7 kursi`, `termurah`, dan `termahal`. Filter harga menggunakan nilai property `harga` pada ontology.
+Pencarian memahami sinonim umum kendaraan (misalnya EV/listrik, matic/otomatis, diesel/solar, pickup/truk bak) serta pertanyaan seperti `antara 100 sampai 200 juta`, `mobil 7 kursi`, `termurah`, dan `termahal`. Filter harga menggunakan nilai property `harga` pada ontology.

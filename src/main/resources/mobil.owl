@@ -366,16 +366,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#BlindVan">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MobilBarang"/>
-        <skos:altLabel xml:lang="en">blind van</skos:altLabel>
-        <skos:altLabel xml:lang="id">blindvan</skos:altLabel>
-        <skos:altLabel xml:lang="id">mobil boks kecil</skos:altLabel>
-        <skos:altLabel xml:lang="id">van tertutup</skos:altLabel>
-        <skos:altLabel xml:lang="id">van kurir</skos:altLabel>
-        <skos:altLabel xml:lang="id">van logistik</skos:altLabel>
-        <skos:altLabel xml:lang="id">mobil van kargo</skos:altLabel>
-        <skos:altLabel xml:lang="id">van kargo</skos:altLabel>
-        <skos:altLabel xml:lang="id">mobil ekspedisi</skos:altLabel>
-        <skos:altLabel xml:lang="id">van panel</skos:altLabel>
+        <skos:altLabel xml:lang="id">blind van</skos:altLabel>
+        <skos:altLabel xml:lang="id">van</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil box kecil</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil kargo ringan</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
     </owl:Class>
     
@@ -742,11 +738,11 @@
         <skos:altLabel xml:lang="id">kendaraan barang</skos:altLabel>
         <skos:altLabel xml:lang="id">kendaraan niaga</skos:altLabel>
         <skos:altLabel xml:lang="en">commercial vehicle</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+
         <skos:altLabel xml:lang="id">mobil angkutan barang</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk angkutan</skos:altLabel>
+
         <skos:altLabel xml:lang="en">freight vehicle</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk komersial</skos:altLabel>
+
         <skos:altLabel xml:lang="id">mobil kargo</skos:altLabel>
 
     </owl:Class>
@@ -805,17 +801,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#PickUp">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MobilBarang"/>
-        <skos:altLabel xml:lang="en">pickup</skos:altLabel>
+        <skos:altLabel xml:lang="id">pickup</skos:altLabel>
         <skos:altLabel xml:lang="id">pick up</skos:altLabel>
-        <skos:altLabel xml:lang="id">pikap</skos:altLabel>
-        <skos:altLabel xml:lang="id">mobil bak</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak terbuka</skos:altLabel>
-        <skos:altLabel xml:lang="en">open cargo</skos:altLabel>
-        <skos:altLabel xml:lang="id">mobil pick up</skos:altLabel>
         <skos:altLabel xml:lang="id">bak terbuka</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk kecil</skos:altLabel>
-        <skos:altLabel xml:lang="id">bak pikap</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
     </owl:Class>
     
@@ -984,6 +975,7 @@
         <skos:altLabel xml:lang="id">trailer head</skos:altLabel>
         <skos:altLabel xml:lang="id">truk peti kemas</skos:altLabel>
         <skos:altLabel xml:lang="id">truk penarik</skos:altLabel>
+        <skos:altLabel xml:lang="id">trailer</skos:altLabel>
 
     </owl:Class>
     
@@ -1143,7 +1135,7 @@
         <untitled-ontology-8:memilikiFiturKenyamanan rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#AC_Double_Blower"/>
         <untitled-ontology-8:memilikiFiturKenyamanan rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#PowerWindow"/>
         <untitled-ontology-8:memilikiFiturKeselamatan rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Airbag_System"/>
-        <untitled-ontology-8:memilikiMerk rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Daihatsu"/>
+        <untitled-ontology-8:memilikiMerk rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Suzuki"/>
         <untitled-ontology-8:memilikiMesin rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#GasolineEngine"/>
         <untitled-ontology-8:memilikiRemBelakang rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#DiskBrake"/>
         <untitled-ontology-8:memilikiRemDepan rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#DrumBrake"/>
@@ -1159,6 +1151,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1493</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki APV Arena Blind Van</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Suzuki APV Arena Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">APV Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">APV Van</skos:altLabel>
@@ -1167,8 +1160,20 @@
         <skos:altLabel xml:lang="id">APV kurir</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil ekspedisi apv</skos:altLabel>
         <skos:altLabel xml:lang="id">van apv</skos:altLabel>
+        <skos:altLabel xml:lang="id">van niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">van kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">blind van</skos:altLabel>
+        <skos:altLabel xml:lang="id">van</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil box kecil</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil kargo ringan</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Airbag_System -->
@@ -1304,6 +1309,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>BMW 330i M Sport Pro</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">BMW 330i M Sport Pro</skos:altLabel>
         <skos:altLabel xml:lang="id">BMW 330i</skos:altLabel>
         <skos:altLabel xml:lang="id">BMW Seri 3</skos:altLabel>
@@ -1311,7 +1317,9 @@
         <skos:altLabel xml:lang="id">sedan bmw 330i</skos:altLabel>
         <skos:altLabel xml:lang="id">bmw 320i 330i</skos:altLabel>
         <skos:altLabel xml:lang="id">sedan bmw</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -1343,6 +1351,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2993</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>BMW M4 Competition</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">BMW M4 Competition</skos:altLabel>
         <skos:altLabel xml:lang="id">M4 Competition</skos:altLabel>
         <skos:altLabel xml:lang="id">BMW M4</skos:altLabel>
@@ -1350,7 +1359,9 @@
         <skos:altLabel xml:lang="id">bmw m4 sport</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil sport bmw</skos:altLabel>
         <skos:altLabel xml:lang="id">m4 kencang</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -1432,6 +1443,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1462</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki Carry Blind Van</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Suzuki Carry Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">Carry Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">Carry Van</skos:altLabel>
@@ -1439,8 +1451,20 @@
         <skos:altLabel xml:lang="id">Carry minibus tertutup</skos:altLabel>
         <skos:altLabel xml:lang="id">Carry blind</skos:altLabel>
         <skos:altLabel xml:lang="id">van carry kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">van niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">van kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">blind van</skos:altLabel>
+        <skos:altLabel xml:lang="id">van</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil box kecil</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil kargo ringan</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#CarryPickUp -->
@@ -1467,6 +1491,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1462</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki Carry Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Suzuki Carry Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Carry Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Suzuki Carry pikap</skos:altLabel>
@@ -1474,13 +1499,24 @@
         <skos:altLabel xml:lang="id">Carry futura</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil bak carry</skos:altLabel>
         <skos:altLabel xml:lang="id">pikap suzuki</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak kecil</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
-        <skos:altLabel xml:lang="en">pickup</skos:altLabel>
+
+
+        <skos:altLabel xml:lang="id">pickup</skos:altLabel>
         <skos:altLabel xml:lang="id">pickup carry</skos:altLabel>
         <skos:altLabel xml:lang="id">carry pikap</skos:altLabel>
+        <skos:altLabel xml:lang="id">pick up</skos:altLabel>
+        <skos:altLabel xml:lang="id">pikap</skos:altLabel>
+        <skos:altLabel xml:lang="id">bak terbuka</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil barang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#ChasisLadderFrame -->
@@ -1557,15 +1593,18 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Ayla 1.2 R</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Daihatsu Ayla 1.2 R</skos:altLabel>
         <skos:altLabel xml:lang="id">Ayla 1.2 R</skos:altLabel>
         <skos:altLabel xml:lang="id">Ayla</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil ayla</skos:altLabel>
         <skos:altLabel xml:lang="id">Daihatsu Ayla</skos:altLabel>
         <skos:altLabel xml:lang="id">ayla matic</skos:altLabel>
-        <skos:altLabel xml:lang="en">city car ayla</skos:altLabel>
+        <skos:altLabel xml:lang="id">city car ayla</skos:altLabel>
         <skos:altLabel xml:lang="id">ayla lcgc</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -1594,6 +1633,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Gran Max Minibus 1.5 D</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Daihatsu Gran Max Minibus 1.5 D</skos:altLabel>
         <skos:altLabel xml:lang="id">Daihatsu Gran Max MB</skos:altLabel>
         <skos:altLabel xml:lang="id">Granmax Minibus</skos:altLabel>
         <skos:altLabel xml:lang="id">Grandmax MB</skos:altLabel>
@@ -1602,7 +1643,8 @@
         <skos:altLabel xml:lang="id">minibus daihatsu</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga gran max</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -1633,6 +1675,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1197</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Sigra 1.2 R AT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Daihatsu Sigra 1.2 R AT</skos:altLabel>
         <skos:altLabel xml:lang="id">Daihatsu Sigra</skos:altLabel>
         <skos:altLabel xml:lang="id">Sigra</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil sigra</skos:altLabel>
@@ -1642,7 +1686,9 @@
         <skos:altLabel xml:lang="id">mobil keluarga murah</skos:altLabel>
         <skos:altLabel xml:lang="id">sigra matic</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -1732,6 +1778,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4009</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hino Dutro 110 SDL Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Hino Dutro 110 SDL Box Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Dutro 110 Box</skos:altLabel>
         <skos:altLabel xml:lang="id">Dutro boks</skos:altLabel>
@@ -1740,8 +1787,17 @@
         <skos:altLabel xml:lang="id">truk box 110</skos:altLabel>
         <skos:altLabel xml:lang="id">truk boks hino</skos:altLabel>
         <skos:altLabel xml:lang="id">truk box</skos:altLabel>
+        <skos:altLabel xml:lang="id">box truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk boks</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#DutroBoxTruck -->
@@ -1768,6 +1824,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4009</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hino Dutro 130 HD Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Hino Dutro 130 HD Box Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Dutro 130 Box</skos:altLabel>
         <skos:altLabel xml:lang="id">Dutro HD boks</skos:altLabel>
@@ -1775,8 +1832,17 @@
         <skos:altLabel xml:lang="id">truk boks hino dutro</skos:altLabel>
         <skos:altLabel xml:lang="id">truk box dutro hd</skos:altLabel>
         <skos:altLabel xml:lang="id">truk boks</skos:altLabel>
+        <skos:altLabel xml:lang="id">box truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk box</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#ElectricMotor -->
@@ -1834,6 +1900,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2999</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Isuzu Elf NMR 71 Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Isuzu Elf NMR 71 Box Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Elf NMR Box</skos:altLabel>
         <skos:altLabel xml:lang="id">Isuzu Elf boks</skos:altLabel>
@@ -1842,8 +1909,18 @@
         <skos:altLabel xml:lang="id">Isuzu elf nmr</skos:altLabel>
         <skos:altLabel xml:lang="id">truk box isuzu</skos:altLabel>
         <skos:altLabel xml:lang="id">truk elf</skos:altLabel>
+        <skos:altLabel xml:lang="id">box truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk boks</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk box</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#FormoBlindVan -->
@@ -1870,6 +1947,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1206</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Wuling Formo Blind Van</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Wuling Formo Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">Formo Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">Formo Van</skos:altLabel>
@@ -1877,8 +1955,20 @@
         <skos:altLabel xml:lang="id">Wuling formo</skos:altLabel>
         <skos:altLabel xml:lang="id">formo kurir</skos:altLabel>
         <skos:altLabel xml:lang="id">van wuling formo</skos:altLabel>
+        <skos:altLabel xml:lang="id">van niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">van kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">blind van</skos:altLabel>
+        <skos:altLabel xml:lang="id">van</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil box kecil</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil kargo ringan</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#FullAirBrake -->
@@ -1926,6 +2016,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3908</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mitsubishi Colt Diesel Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Mitsubishi Colt Diesel Box Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Colt Diesel Box</skos:altLabel>
         <skos:altLabel xml:lang="id">Fuso boks</skos:altLabel>
@@ -1934,8 +2025,18 @@
         <skos:altLabel xml:lang="id">truk box colt diesel</skos:altLabel>
         <skos:altLabel xml:lang="id">truk canter boks</skos:altLabel>
         <skos:altLabel xml:lang="id">colt diesel</skos:altLabel>
+        <skos:altLabel xml:lang="id">box truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk boks</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk box</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#GasolineEngine -->
@@ -1979,6 +2080,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1499</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Granmax Blind Van</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Daihatsu Gran Max Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">Granmax Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">Grandmax Blind Van</skos:altLabel>
@@ -1986,8 +2088,21 @@
         <skos:altLabel xml:lang="id">Granmax van ekspedisi</skos:altLabel>
         <skos:altLabel xml:lang="id">blind van grandmax</skos:altLabel>
         <skos:altLabel xml:lang="id">van paket granmax</skos:altLabel>
+        <skos:altLabel xml:lang="id">van niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">van kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
+        <skos:altLabel xml:lang="id">blind van</skos:altLabel>
+        <skos:altLabel xml:lang="id">van</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil box kecil</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil kargo ringan</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#GrandmaxBoxTruck -->
@@ -2014,6 +2129,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1495</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Gran Max Box Truck</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Daihatsu Gran Max Box Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Gran Max Box</skos:altLabel>
         <skos:altLabel xml:lang="id">Grandmax boks</skos:altLabel>
@@ -2021,8 +2137,18 @@
         <skos:altLabel xml:lang="id">mobil boks grandmax</skos:altLabel>
         <skos:altLabel xml:lang="id">truk boks gran max</skos:altLabel>
         <skos:altLabel xml:lang="id">gran max box</skos:altLabel>
+        <skos:altLabel xml:lang="id">box truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk boks</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk box</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#GrandmaxPickUp -->
@@ -2049,18 +2175,30 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1495</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Daihatsu Gran Max Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Daihatsu Gran Max Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Granmax Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Grandmax pikap</skos:altLabel>
         <skos:altLabel xml:lang="id">Gran Max bak</skos:altLabel>
         <skos:altLabel xml:lang="id">pikap granmax</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak grandmax</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
-        <skos:altLabel xml:lang="en">pickup</skos:altLabel>
+
+
+        <skos:altLabel xml:lang="id">pickup</skos:altLabel>
         <skos:altLabel xml:lang="id">pickup granmax</skos:altLabel>
         <skos:altLabel xml:lang="id">grandmax bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">pick up</skos:altLabel>
+        <skos:altLabel xml:lang="id">pikap</skos:altLabel>
+        <skos:altLabel xml:lang="id">bak terbuka</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil barang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HiluxSingleCabPickUp -->
@@ -2087,17 +2225,29 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2393</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Hilux Single Cab Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Toyota Hilux Single Cab Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Hilux Single Cab</skos:altLabel>
         <skos:altLabel xml:lang="id">Hilux pikap</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Hilux bak</skos:altLabel>
         <skos:altLabel xml:lang="id">Hilux 4x2</skos:altLabel>
         <skos:altLabel xml:lang="id">pikap toyota hilux</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
-        <skos:altLabel xml:lang="en">pickup</skos:altLabel>
-        <skos:altLabel xml:lang="id">pickup hilux</skos:altLabel>
 
-    </owl:NamedIndividual>
+        <skos:altLabel xml:lang="id">pickup</skos:altLabel>
+        <skos:altLabel xml:lang="id">pickup hilux</skos:altLabel>
+        <skos:altLabel xml:lang="id">pick up</skos:altLabel>
+        <skos:altLabel xml:lang="id">pikap</skos:altLabel>
+        <skos:altLabel xml:lang="id">bak terbuka</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil barang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
+
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino -->
@@ -2152,15 +2302,24 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-abs-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FG 260 JK ABS Tank Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FG 260 JK Tank ABS</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 tangki abs</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki hino fg</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bbm hino</skos:altLabel>
-        <skos:altLabel xml:lang="en">tank truck hino</skos:altLabel>
+        <skos:altLabel xml:lang="id">tank truck hino</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki</skos:altLabel>
+        <skos:altLabel xml:lang="id">tanker</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKABSTankTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2232,15 +2391,24 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jk-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FG 260 JK Tank Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FG 260 JK Tank</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 tangki</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki pertamina</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki hino</skos:altLabel>
-        <skos:altLabel xml:lang="en">tanker hino 500</skos:altLabel>
+        <skos:altLabel xml:lang="id">tanker hino 500</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki</skos:altLabel>
+        <skos:altLabel xml:lang="id">tanker</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JKTankTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
@@ -2312,15 +2480,24 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fg-260-jl-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FG 260 JL Tank Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FG 260 JL Tank</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 tangki panjang</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki cpo</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki air hino</skos:altLabel>
-        <skos:altLabel xml:lang="en">hino tanker truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">hino tanker truck</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki</skos:altLabel>
+        <skos:altLabel xml:lang="id">tanker</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FG260JLTankTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2392,6 +2569,7 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jn-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FL 260 JN Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FL 260 JN Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 tronton pendek</skos:altLabel>
@@ -2399,8 +2577,16 @@
         <skos:altLabel xml:lang="id">truk 3 sumbu hino</skos:altLabel>
         <skos:altLabel xml:lang="id">hino tronton 6x2</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JNTronton"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2472,15 +2658,22 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FL 260 JW Tank Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FL 260 JW Tank</skos:altLabel>
-        <skos:altLabel xml:lang="id">Hino 500 tangki tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki besar</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki bbm 16000 liter</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk tangki tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki</skos:altLabel>
+        <skos:altLabel xml:lang="id">tanker</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTankTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2552,6 +2745,7 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-260-jw-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FL 260 JW Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FL 260 JW Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 tronton panjang</skos:altLabel>
@@ -2559,8 +2753,16 @@
         <skos:altLabel xml:lang="id">hino tronton wing box</skos:altLabel>
         <skos:altLabel xml:lang="id">truk sasis panjang hino</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL260JWTronton"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2632,6 +2834,7 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fl-280-jw-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FL 280 JW Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FL 280 JW Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 tronton 280 ps</skos:altLabel>
@@ -2639,8 +2842,16 @@
         <skos:altLabel xml:lang="id">tronton logistik hino</skos:altLabel>
         <skos:altLabel xml:lang="id">hino fl 280 tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FL280JWTronton"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2714,6 +2925,7 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-abs-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FM 280 JD ABS Dump Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 FM 280 Dump ABS</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FM 280 JD dump</skos:altLabel>
@@ -2722,8 +2934,19 @@
         <skos:altLabel xml:lang="id">truk pasir hino abs</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bak hino</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk jungkit</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk tambang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDABSDumpTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2795,6 +3018,7 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/fm-280-jd-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FM 280 JD Dump Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 FM 280 Dump</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FM 280 JD dump</skos:altLabel>
@@ -2803,8 +3027,19 @@
         <skos:altLabel xml:lang="id">truk pasir hino</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bak hino 500</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk jungkit</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk tambang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDDumpTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2876,16 +3111,28 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-jd-r-mining-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FM 280 JD R Mining Dump Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 Mining Dump</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FM 280 Mining</skos:altLabel>
         <skos:altLabel xml:lang="id">truk dump tambang</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tambang hino</skos:altLabel>
-        <skos:altLabel xml:lang="en">heavy duty dump truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">heavy duty dump truck</skos:altLabel>
         <skos:altLabel xml:lang="id">truk jungkit tambang</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk jungkit</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk tambang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280JDRMiningDumpTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -2957,16 +3204,26 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/fm-280-th-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 FM 280 TH Trailer Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino FM 280 TH Tractor Head</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 Trailer</skos:altLabel>
         <skos:altLabel xml:lang="id">truk gandeng hino</skos:altLabel>
         <skos:altLabel xml:lang="id">truk trailer hino fm</skos:altLabel>
-        <skos:altLabel xml:lang="en">tractor head hino</skos:altLabel>
+        <skos:altLabel xml:lang="id">tractor head hino</skos:altLabel>
         <skos:altLabel xml:lang="id">truk kontainer</skos:altLabel>
         <skos:altLabel xml:lang="id">truk trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">tractor head</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500FM280THTrailerTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -3039,6 +3296,7 @@
         <rdfs:label xml:lang="id">Hino 500 SG 260 TH ABS Trailer Truck</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/2/sg-260-th-new-complete-with-abs-system"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 SG 260 TH ABS Trailer Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino SG 260 TH ABS</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 trailer abs</skos:altLabel>
@@ -3046,8 +3304,17 @@
         <skos:altLabel xml:lang="id">truk kontainer hino</skos:altLabel>
         <skos:altLabel xml:lang="id">trailer head hino</skos:altLabel>
         <skos:altLabel xml:lang="id">truk trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">tractor head</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG260THABSTrailerTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -3118,6 +3385,7 @@
         <rdfs:seeAlso rdf:resource="https://hino.id/model/hino-500-fm-280-series/"/>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/euro4/2/sg-280-th-euro4"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino 500 SG 280 TH Trailer Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino SG 280 TH</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino 500 trailer 280hp</skos:altLabel>
@@ -3125,8 +3393,18 @@
         <skos:altLabel xml:lang="id">truk kontainer peti kemas</skos:altLabel>
         <skos:altLabel xml:lang="id">truk trailer gandengan</skos:altLabel>
         <skos:altLabel xml:lang="id">truk gandeng</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">tractor head</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Hino500SG280THTrailerTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -3197,15 +3475,24 @@
         <rdfs:label xml:lang="id">Hino Dutro 130 HD LSD Tank Truck</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.hino.co.id/product-detail/1/130-hd-lsd-euro2"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Hino Dutro 130 HD LSD Tank Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Dutro 130 HD Tank</skos:altLabel>
         <skos:altLabel xml:lang="id">Hino Dutro tangki</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki dutro</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki kecil 5000L</skos:altLabel>
-        <skos:altLabel xml:lang="en">dutro tanker truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">dutro tanker truck</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tangki</skos:altLabel>
+        <skos:altLabel xml:lang="id">tanker</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HinoDutro130HDLSDTankTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -3282,16 +3569,19 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda Brio RS CVT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Honda Brio RS CVT</skos:altLabel>
         <skos:altLabel xml:lang="id">Brio RS</skos:altLabel>
         <skos:altLabel xml:lang="id">Brio</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil brio</skos:altLabel>
         <skos:altLabel xml:lang="id">Honda Brio</skos:altLabel>
         <skos:altLabel xml:lang="id">brio matic</skos:altLabel>
-        <skos:altLabel xml:lang="en">city car brio</skos:altLabel>
+        <skos:altLabel xml:lang="id">city car brio</skos:altLabel>
         <skos:altLabel xml:lang="id">honda brio matic</skos:altLabel>
         <skos:altLabel xml:lang="id">brio cvt</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3323,6 +3613,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1498</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda CR-V 1.5L Turbo</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Honda CR-V 1.5L Turbo</skos:altLabel>
         <skos:altLabel xml:lang="id">Honda CR-V 1.5 Turbo</skos:altLabel>
         <skos:altLabel xml:lang="id">CR-V Turbo</skos:altLabel>
         <skos:altLabel xml:lang="id">Honda CRV</skos:altLabel>
@@ -3331,7 +3623,9 @@
         <skos:altLabel xml:lang="id">mobil crv</skos:altLabel>
         <skos:altLabel xml:lang="id">crv matic</skos:altLabel>
         <skos:altLabel xml:lang="id">cr-v</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3361,6 +3655,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda City Hatchback RS</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Honda City Hatchback RS</skos:altLabel>
         <skos:altLabel xml:lang="id">City Hatchback RS</skos:altLabel>
         <skos:altLabel xml:lang="id">City Hatchback</skos:altLabel>
@@ -3369,7 +3664,9 @@
         <skos:altLabel xml:lang="id">hatchback honda</skos:altLabel>
         <skos:altLabel xml:lang="id">city hb rs</skos:altLabel>
         <skos:altLabel xml:lang="id">city matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3400,6 +3697,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1498</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda Civic RS Turbo</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Honda Civic RS Turbo</skos:altLabel>
         <skos:altLabel xml:lang="id">Honda Civic RS</skos:altLabel>
         <skos:altLabel xml:lang="id">Civic RS</skos:altLabel>
@@ -3407,7 +3705,9 @@
         <skos:altLabel xml:lang="id">Honda Civic</skos:altLabel>
         <skos:altLabel xml:lang="id">sedan honda civic</skos:altLabel>
         <skos:altLabel xml:lang="id">civic rs matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3439,6 +3739,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda HR-V 1.5 SE</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Honda HR-V 1.5 SE</skos:altLabel>
         <skos:altLabel xml:lang="id">HR-V 1.5 SE</skos:altLabel>
         <skos:altLabel xml:lang="id">HRV SE</skos:altLabel>
@@ -3447,7 +3748,9 @@
         <skos:altLabel xml:lang="id">crossover honda</skos:altLabel>
         <skos:altLabel xml:lang="id">hrv matic</skos:altLabel>
         <skos:altLabel xml:lang="id">hr-v</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3479,15 +3782,19 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2356</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Honda Odyssey 2.4L Prestige</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2023</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Honda Odyssey 2.4L Prestige</skos:altLabel>
         <skos:altLabel xml:lang="id">Honda Odyssey</skos:altLabel>
         <skos:altLabel xml:lang="id">Odyssey</skos:altLabel>
         <skos:altLabel xml:lang="id">Honda Odyssey 2.4</skos:altLabel>
         <skos:altLabel xml:lang="id">odyssey prestige</skos:altLabel>
         <skos:altLabel xml:lang="id">mpv mewah honda</skos:altLabel>
-        <skos:altLabel xml:lang="en">premium mpv</skos:altLabel>
+        <skos:altLabel xml:lang="id">premium mpv</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga honda</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3583,6 +3890,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hyundai Creta Prime IVT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Hyundai Creta Prime IVT</skos:altLabel>
         <skos:altLabel xml:lang="id">Creta Prime</skos:altLabel>
         <skos:altLabel xml:lang="id">Creta IVT</skos:altLabel>
@@ -3590,7 +3898,9 @@
         <skos:altLabel xml:lang="id">mobil creta</skos:altLabel>
         <skos:altLabel xml:lang="id">crossover hyundai</skos:altLabel>
         <skos:altLabel xml:lang="id">creta matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3622,14 +3932,17 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2199</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hyundai Palisade Signature</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Hyundai Palisade Signature</skos:altLabel>
         <skos:altLabel xml:lang="id">Hyundai Palisade</skos:altLabel>
         <skos:altLabel xml:lang="id">Palisade</skos:altLabel>
         <skos:altLabel xml:lang="id">Palisade AWD</skos:altLabel>
         <skos:altLabel xml:lang="id">suv mewah hyundai</skos:altLabel>
-        <skos:altLabel xml:lang="en">big suv hyundai</skos:altLabel>
+        <skos:altLabel xml:lang="id">big suv hyundai</skos:altLabel>
         <skos:altLabel xml:lang="id">palisade diesel</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3660,6 +3973,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hyundai Stargazer Prime</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Hyundai Stargazer Prime</skos:altLabel>
         <skos:altLabel xml:lang="id">Stargazer Prime</skos:altLabel>
         <skos:altLabel xml:lang="id">Hyundai Stargazer</skos:altLabel>
@@ -3668,7 +3982,9 @@
         <skos:altLabel xml:lang="id">minibus hyundai</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga hyundai</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3700,6 +4016,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2199</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Hyundai Staria Signature 7</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Hyundai Staria Signature 7</skos:altLabel>
         <skos:altLabel xml:lang="id">Hyundai Staria</skos:altLabel>
         <skos:altLabel xml:lang="id">Staria</skos:altLabel>
         <skos:altLabel xml:lang="id">Hyundai Staria Signature</skos:altLabel>
@@ -3708,7 +4026,9 @@
         <skos:altLabel xml:lang="id">van mewah hyundai</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga hyundai</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3780,6 +4100,7 @@
         <rdfs:seeAlso rdf:resource="https://isuzu-astra.com/giga-fvm/"/>
         <rdfs:seeAlso rdf:resource="https://isuzu-astra.com/wp-content/uploads/2022/04/BROSUR_EURO4-FVM.pdf"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Isuzu Giga FVM N HP ABS Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Isuzu Giga FVM Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Giga FVM N ABS</skos:altLabel>
@@ -3787,8 +4108,16 @@
         <skos:altLabel xml:lang="id">truk tronton isuzu giga</skos:altLabel>
         <skos:altLabel xml:lang="id">tronton giga 6x2</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#IsuzuGigaFVMNHPABSTronton"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -3850,6 +4179,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1898</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Isuzu MU-X 1.9 4x4</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Isuzu MU-X 1.9 4x4</skos:altLabel>
         <skos:altLabel xml:lang="id">Isuzu MU-X</skos:altLabel>
         <skos:altLabel xml:lang="id">MUX 4x4</skos:altLabel>
@@ -3857,7 +4187,9 @@
         <skos:altLabel xml:lang="id">isuzu mux diesel</skos:altLabel>
         <skos:altLabel xml:lang="id">suv ladder frame isuzu</skos:altLabel>
         <skos:altLabel xml:lang="id">mu-x</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -3904,6 +4236,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2477</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mitsubishi L300 Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Mitsubishi L300 Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Mitsubishi Colt L300 Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Mitsubishi L300</skos:altLabel>
         <skos:altLabel xml:lang="id">L300 Pick Up</skos:altLabel>
@@ -3911,15 +4245,26 @@
         <skos:altLabel xml:lang="id">elspek</skos:altLabel>
         <skos:altLabel xml:lang="id">L 300</skos:altLabel>
         <skos:altLabel xml:lang="id">pikap l300</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak l300</skos:altLabel>
+
         <skos:altLabel xml:lang="id">mobil bak l300</skos:altLabel>
         <skos:altLabel xml:lang="id">l300 diesel</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
-        <skos:altLabel xml:lang="en">pickup</skos:altLabel>
+
+        <skos:altLabel xml:lang="id">pickup</skos:altLabel>
         <skos:altLabel xml:lang="id">pickup l300</skos:altLabel>
         <skos:altLabel xml:lang="id">l300 pikap</skos:altLabel>
+        <skos:altLabel xml:lang="id">pick up</skos:altLabel>
+        <skos:altLabel xml:lang="id">pikap</skos:altLabel>
+        <skos:altLabel xml:lang="id">bak terbuka</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil barang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Lane_Keep_Assist -->
@@ -4035,13 +4380,17 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mazda 2 Hatchback GT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Mazda 2 Hatchback GT</skos:altLabel>
         <skos:altLabel xml:lang="id">Mazda 2 GT</skos:altLabel>
         <skos:altLabel xml:lang="id">Mazda 2 Hatchback</skos:altLabel>
         <skos:altLabel xml:lang="id">Mazda 2</skos:altLabel>
         <skos:altLabel xml:lang="id">mazda2 gt</skos:altLabel>
         <skos:altLabel xml:lang="id">hatchback mazda</skos:altLabel>
         <skos:altLabel xml:lang="id">mazda 2 matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4072,13 +4421,16 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mazda 3 Sedan</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Mazda 3 Sedan</skos:altLabel>
         <skos:altLabel xml:lang="id">Mazda 3</skos:altLabel>
         <skos:altLabel xml:lang="id">All New Mazda 3 Sedan</skos:altLabel>
         <skos:altLabel xml:lang="id">sedan mazda 3</skos:altLabel>
         <skos:altLabel xml:lang="id">mazda3</skos:altLabel>
         <skos:altLabel xml:lang="id">mazda 3 matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4108,6 +4460,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mazda CX-3 1.5 Sport</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Mazda CX-3 1.5 Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">CX-3 Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">Mazda CX3</skos:altLabel>
@@ -4115,7 +4468,9 @@
         <skos:altLabel xml:lang="id">mobil cx3</skos:altLabel>
         <skos:altLabel xml:lang="id">crossover mazda</skos:altLabel>
         <skos:altLabel xml:lang="id">cx-3</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4164,14 +4519,18 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2999</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mercedes-AMG GT 53 4MATIC+</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Mercedes-AMG GT 53 4MATIC+</skos:altLabel>
         <skos:altLabel xml:lang="id">Mercedes-AMG GT</skos:altLabel>
         <skos:altLabel xml:lang="id">AMG GT</skos:altLabel>
         <skos:altLabel xml:lang="id">Mercedes Benz AMG GT</skos:altLabel>
         <skos:altLabel xml:lang="id">Mercy AMG GT</skos:altLabel>
         <skos:altLabel xml:lang="id">amg gt coupe</skos:altLabel>
-        <skos:altLabel xml:lang="en">supercar mercedes</skos:altLabel>
+        <skos:altLabel xml:lang="id">supercar mercedes</skos:altLabel>
         <skos:altLabel xml:lang="id">mercedes sport</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4203,6 +4562,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mercedes-Benz C 300 AMG Line</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Mercedes-Benz C 300 AMG Line</skos:altLabel>
         <skos:altLabel xml:lang="id">Mercedes C300</skos:altLabel>
         <skos:altLabel xml:lang="id">C 300 AMG Line</skos:altLabel>
@@ -4210,7 +4570,9 @@
         <skos:altLabel xml:lang="id">Mercy C-Class</skos:altLabel>
         <skos:altLabel xml:lang="id">sedan mercy c300</skos:altLabel>
         <skos:altLabel xml:lang="id">c300 matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4239,16 +4601,33 @@
         <untitled-ontology-8:kapasitasAngkutan rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</untitled-ontology-8:kapasitasAngkutan>
         <untitled-ontology-8:namaMobil>Wuling Mitra EV</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Wuling Mitra EV</skos:altLabel>
         <skos:altLabel xml:lang="id">Mitra Blind Van</skos:altLabel>
         <skos:altLabel xml:lang="id">Wuling Mitra</skos:altLabel>
         <skos:altLabel xml:lang="id">Mitra EV van</skos:altLabel>
         <skos:altLabel xml:lang="id">van listrik Wuling</skos:altLabel>
         <skos:altLabel xml:lang="id">Wuling listrik niaga</skos:altLabel>
-        <skos:altLabel xml:lang="en">EV</skos:altLabel>
+        <skos:altLabel xml:lang="id">EV</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil listrik kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">van niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">van kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">electric vehicle</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil listrik</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan listrik</skos:altLabel>
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
+        <skos:altLabel xml:lang="id">blind van</skos:altLabel>
+        <skos:altLabel xml:lang="id">van</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil box kecil</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil kargo ringan</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Mitsubishi -->
@@ -4302,6 +4681,7 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/canter-fe-74-hd/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishi-srikandi.com/fuso/light-duty/canter-fe-74-hd"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Mitsubishi Fuso Canter FE 74 HD Dump Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Canter FE 74 HD Dump</skos:altLabel>
         <skos:altLabel xml:lang="id">Canter dump truck</skos:altLabel>
@@ -4310,8 +4690,19 @@
         <skos:altLabel xml:lang="id">kepala kuning dump</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bak canter</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk jungkit</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk tambang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiCanterFE74HDDumpTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -4383,16 +4774,26 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fm65-th/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fm65f-th/"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Mitsubishi Fuso Fighter X FM65F TH Trailer Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Fuso Fighter FM65F TH</skos:altLabel>
         <skos:altLabel xml:lang="id">Fighter X trailer</skos:altLabel>
         <skos:altLabel xml:lang="id">truk trailer mitsubishi</skos:altLabel>
         <skos:altLabel xml:lang="id">tractor head fighter x</skos:altLabel>
-        <skos:altLabel xml:lang="en">fuso trailer truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">fuso trailer truck</skos:altLabel>
         <skos:altLabel xml:lang="id">truk gandeng</skos:altLabel>
         <skos:altLabel xml:lang="id">truk trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">tractor head</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFM65FTHTrailerTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -4464,6 +4865,7 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-61-fl-hd-r/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fn61fl-hd-r/"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Mitsubishi Fuso Fighter X FN61FL HD R Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Fuso Fighter FN61FL Tronton</skos:altLabel>
         <skos:altLabel xml:lang="id">Fighter X FN61FL</skos:altLabel>
@@ -4471,8 +4873,16 @@
         <skos:altLabel xml:lang="id">mitsubishi tronton 6x2</skos:altLabel>
         <skos:altLabel xml:lang="id">fuso tronton panjang</skos:altLabel>
         <skos:altLabel xml:lang="id">truk tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">tronton</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN61FLHDRTronton"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -4544,6 +4954,7 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn62f-hd-r-mining-equipment/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishidipogatsu.com/model/36/fighter-x"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Mitsubishi Fuso Fighter X FN62F HD R Mining Dump Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Fighter X Mining Dump</skos:altLabel>
         <skos:altLabel xml:lang="id">Fuso FN62F Mining</skos:altLabel>
@@ -4552,8 +4963,19 @@
         <skos:altLabel xml:lang="id">fuso fighter dump</skos:altLabel>
         <skos:altLabel xml:lang="id">truk jungkit fuso 6x4</skos:altLabel>
         <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump</skos:altLabel>
+        <skos:altLabel xml:lang="id">dump truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk jungkit</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk tambang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FHDRMiningDumpTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#HP"/>
@@ -4625,16 +5047,25 @@
         <rdfs:seeAlso rdf:resource="https://www.ktbfuso.co.id/product-detail/fighter-x-fn-62-f-tractor-head/"/>
         <rdfs:seeAlso rdf:resource="https://www.mitsubishitebet.com/listings/fighter-x-fn62f-th/"/>
         <rdfs:seeAlso rdf:resource="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"/>
+
         <skos:altLabel xml:lang="id">Mitsubishi Fuso Fighter X FN62F TH Trailer Truck</skos:altLabel>
         <skos:altLabel xml:lang="id">Fuso Fighter FN62F TH</skos:altLabel>
         <skos:altLabel xml:lang="id">Fighter X 6x4 trailer</skos:altLabel>
         <skos:altLabel xml:lang="id">truk gandeng fuso</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk tronton trailer fuso</skos:altLabel>
         <skos:altLabel xml:lang="id">fuso fighter trailer</skos:altLabel>
         <skos:altLabel xml:lang="id">truk kontainer fuso</skos:altLabel>
         <skos:altLabel xml:lang="id">truk trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">trailer</skos:altLabel>
+        <skos:altLabel xml:lang="id">tractor head</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">truk</skos:altLabel>
+        <skos:altLabel xml:lang="id">truck</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan berat</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#MitsubishiFighterXFN62FTHTrailerTruck"/>
         <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#tahunProduksi"/>
@@ -4699,6 +5130,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2442</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mitsubishi Pajero Sport Dakar</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Mitsubishi Pajero Sport Dakar</skos:altLabel>
         <skos:altLabel xml:lang="id">Pajero Sport Dakar</skos:altLabel>
         <skos:altLabel xml:lang="id">Pajero Sport</skos:altLabel>
@@ -4706,7 +5138,9 @@
         <skos:altLabel xml:lang="id">pajero diesel</skos:altLabel>
         <skos:altLabel xml:lang="id">suv gagah pajero</skos:altLabel>
         <skos:altLabel xml:lang="id">pajero sport matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4737,6 +5171,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Mitsubishi Xpander Ultimate CVT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Mitsubishi Xpander Ultimate CVT</skos:altLabel>
         <skos:altLabel xml:lang="id">Mitsubishi Xpander Ultimate</skos:altLabel>
         <skos:altLabel xml:lang="id">Xpander Ultimate</skos:altLabel>
         <skos:altLabel xml:lang="id">Mitsubishi Xpander</skos:altLabel>
@@ -4745,7 +5181,9 @@
         <skos:altLabel xml:lang="id">mobil keluarga xpander</skos:altLabel>
         <skos:altLabel xml:lang="id">xpander</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4792,14 +5230,17 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2981</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Porsche 911 Carrera</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Porsche 911 Carrera</skos:altLabel>
         <skos:altLabel xml:lang="id">911 Carrera</skos:altLabel>
         <skos:altLabel xml:lang="id">Porsche 911</skos:altLabel>
         <skos:altLabel xml:lang="id">Porsche Carrera</skos:altLabel>
         <skos:altLabel xml:lang="id">porche 911</skos:altLabel>
-        <skos:altLabel xml:lang="en">sports car porsche</skos:altLabel>
+        <skos:altLabel xml:lang="id">sports car porsche</skos:altLabel>
         <skos:altLabel xml:lang="id">porsche 911</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4959,14 +5400,18 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2387</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Subaru BRZ 2.4 AT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Subaru BRZ 2.4 AT</skos:altLabel>
         <skos:altLabel xml:lang="id">Subaru BRZ</skos:altLabel>
         <skos:altLabel xml:lang="id">BRZ</skos:altLabel>
         <skos:altLabel xml:lang="id">Subaru BRZ 2.4</skos:altLabel>
-        <skos:altLabel xml:lang="en">brz sports car</skos:altLabel>
+        <skos:altLabel xml:lang="id">brz sports car</skos:altLabel>
         <skos:altLabel xml:lang="id">coupe subaru</skos:altLabel>
         <skos:altLabel xml:lang="id">subaru brz boxer</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil sport subaru</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -4998,6 +5443,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Subaru Crosstrek 2.0i-S</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Subaru Crosstrek 2.0i-S</skos:altLabel>
         <skos:altLabel xml:lang="id">Crosstrek 2.0i-S</skos:altLabel>
         <skos:altLabel xml:lang="id">Subaru Crosstrek</skos:altLabel>
@@ -5005,7 +5451,9 @@
         <skos:altLabel xml:lang="id">mobil crosstrek</skos:altLabel>
         <skos:altLabel xml:lang="id">crossover subaru</skos:altLabel>
         <skos:altLabel xml:lang="id">crosstrek awd</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5067,6 +5515,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki Baleno Hatchback</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Suzuki Baleno Hatchback</skos:altLabel>
         <skos:altLabel xml:lang="id">Suzuki Baleno</skos:altLabel>
         <skos:altLabel xml:lang="id">Baleno Hatchback</skos:altLabel>
         <skos:altLabel xml:lang="id">Baleno</skos:altLabel>
@@ -5074,7 +5524,9 @@
         <skos:altLabel xml:lang="id">mobil baleno</skos:altLabel>
         <skos:altLabel xml:lang="id">hatchback suzuki</skos:altLabel>
         <skos:altLabel xml:lang="id">baleno matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5105,6 +5557,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki Ertiga Hybrid GX</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Suzuki Ertiga Hybrid GX</skos:altLabel>
         <skos:altLabel xml:lang="id">Suzuki Ertiga Hybrid</skos:altLabel>
         <skos:altLabel xml:lang="id">Ertiga Hybrid</skos:altLabel>
         <skos:altLabel xml:lang="id">Suzuki All New Ertiga</skos:altLabel>
@@ -5113,7 +5567,12 @@
         <skos:altLabel xml:lang="id">mobil keluarga ertiga</skos:altLabel>
         <skos:altLabel xml:lang="id">ertiga matic</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">hybrid</skos:altLabel>
+        <skos:altLabel xml:lang="id">hibrida</skos:altLabel>
+        <skos:altLabel xml:lang="id">HEV</skos:altLabel>
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5144,14 +5603,16 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Suzuki S-Presso</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Suzuki S-Presso</skos:altLabel>
         <skos:altLabel xml:lang="id">S-Presso</skos:altLabel>
         <skos:altLabel xml:lang="id">Spresso</skos:altLabel>
         <skos:altLabel xml:lang="id">Suzuki Spresso</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil spresso</skos:altLabel>
         <skos:altLabel xml:lang="id">mini suv suzuki</skos:altLabel>
-        <skos:altLabel xml:lang="en">city car suzuki</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">city car suzuki</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5198,15 +5659,18 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Agya 1.2 GR Sport</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Toyota Agya 1.2 GR Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">Agya GR Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">Agya GR</skos:altLabel>
         <skos:altLabel xml:lang="id">Agya</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Agya</skos:altLabel>
         <skos:altLabel xml:lang="id">agya matic</skos:altLabel>
-        <skos:altLabel xml:lang="en">city car agya</skos:altLabel>
+        <skos:altLabel xml:lang="id">city car agya</skos:altLabel>
         <skos:altLabel xml:lang="id">agya cvt</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5237,6 +5701,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Avanza 1.5 G CVT</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Toyota Avanza 1.5 G CVT</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Avanza</skos:altLabel>
         <skos:altLabel xml:lang="id">Avanza 1.5 G</skos:altLabel>
@@ -5247,7 +5712,9 @@
         <skos:altLabel xml:lang="id">mobil keluarga avanza</skos:altLabel>
         <skos:altLabel xml:lang="id">avanza matic</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5279,6 +5746,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2487</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Camry 2.5 Hybrid</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Toyota Camry 2.5 Hybrid</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Camry Hybrid</skos:altLabel>
         <skos:altLabel xml:lang="id">Camry Hybrid</skos:altLabel>
@@ -5286,7 +5754,12 @@
         <skos:altLabel xml:lang="id">Camry HEV</skos:altLabel>
         <skos:altLabel xml:lang="id">sedan mewah camry</skos:altLabel>
         <skos:altLabel xml:lang="id">camry hybrid</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">hybrid</skos:altLabel>
+        <skos:altLabel xml:lang="id">hibrida</skos:altLabel>
+        <skos:altLabel xml:lang="id">HEV</skos:altLabel>
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5318,6 +5791,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2755</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Fortuner 2.8 GR Sport</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Toyota Fortuner 2.8 GR Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">Fortuner 2.8 GR Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Fortuner</skos:altLabel>
@@ -5326,7 +5800,9 @@
         <skos:altLabel xml:lang="id">mobil cumi-cumi</skos:altLabel>
         <skos:altLabel xml:lang="id">suv ladder frame fortuner</skos:altLabel>
         <skos:altLabel xml:lang="id">fortuner diesel</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5357,14 +5833,17 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2998</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota GR Supra</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Toyota GR Supra</skos:altLabel>
         <skos:altLabel xml:lang="id">GR Supra</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Supra</skos:altLabel>
         <skos:altLabel xml:lang="id">Supra MK5</skos:altLabel>
         <skos:altLabel xml:lang="id">supra</skos:altLabel>
-        <skos:altLabel xml:lang="en">sports car toyota</skos:altLabel>
+        <skos:altLabel xml:lang="id">sports car toyota</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil sport supra</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5394,6 +5873,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1987</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Kijang Innova Zenix Q HV</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Toyota Kijang Innova Zenix Q HV</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Innova Zenix</skos:altLabel>
         <skos:altLabel xml:lang="id">Innova Zenix</skos:altLabel>
         <skos:altLabel xml:lang="id">Kijang Innova Zenix</skos:altLabel>
@@ -5403,7 +5884,12 @@
         <skos:altLabel xml:lang="id">mobil keluarga innova</skos:altLabel>
         <skos:altLabel xml:lang="id">innova bensin</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">hybrid</skos:altLabel>
+        <skos:altLabel xml:lang="id">hibrida</skos:altLabel>
+        <skos:altLabel xml:lang="id">HEV</skos:altLabel>
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5435,6 +5921,7 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Yaris Cross 1.5 S HV</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Toyota Yaris Cross 1.5 S HV</skos:altLabel>
         <skos:altLabel xml:lang="id">Yaris Cross Hybrid</skos:altLabel>
         <skos:altLabel xml:lang="id">Yaris Cross HV</skos:altLabel>
@@ -5443,7 +5930,12 @@
         <skos:altLabel xml:lang="id">crossover hybrid toyota</skos:altLabel>
         <skos:altLabel xml:lang="id">yaris cross hev</skos:altLabel>
         <skos:altLabel xml:lang="id">hybrid suv</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">hybrid</skos:altLabel>
+        <skos:altLabel xml:lang="id">hibrida</skos:altLabel>
+        <skos:altLabel xml:lang="id">HEV</skos:altLabel>
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5473,6 +5965,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Toyota Yaris 1.5 GR Sport</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Toyota Yaris 1.5 GR Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Yaris GR Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">Yaris GR Sport</skos:altLabel>
         <skos:altLabel xml:lang="id">Toyota Yaris</skos:altLabel>
@@ -5481,7 +5975,9 @@
         <skos:altLabel xml:lang="id">yaris joker</skos:altLabel>
         <skos:altLabel xml:lang="id">hatchback yaris</skos:altLabel>
         <skos:altLabel xml:lang="id">yaris matic</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5509,19 +6005,31 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2499</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Isuzu Traga Pick Up</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2026</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Isuzu Traga Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Isuzu Traga</skos:altLabel>
         <skos:altLabel xml:lang="id">Traga Pick Up</skos:altLabel>
         <skos:altLabel xml:lang="id">Traga bak</skos:altLabel>
         <skos:altLabel xml:lang="id">pikap traga</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak traga</skos:altLabel>
+
         <skos:altLabel xml:lang="id">traga diesel</skos:altLabel>
-        <skos:altLabel xml:lang="id">truk bak</skos:altLabel>
-        <skos:altLabel xml:lang="en">pickup</skos:altLabel>
+
+        <skos:altLabel xml:lang="id">pickup</skos:altLabel>
         <skos:altLabel xml:lang="id">pickup traga</skos:altLabel>
         <skos:altLabel xml:lang="id">isuzu traga bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">pick up</skos:altLabel>
+        <skos:altLabel xml:lang="id">pikap</skos:altLabel>
+        <skos:altLabel xml:lang="id">bak terbuka</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil barang</skos:altLabel>
+        <skos:altLabel xml:lang="id">niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">kargo</skos:altLabel>
+        <skos:altLabel xml:lang="id">manual</skos:altLabel>
+        <skos:altLabel xml:lang="id">MT</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil bak</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil niaga</skos:altLabel>
+        <skos:altLabel xml:lang="id">angkut barang</skos:altLabel>
 
-    </owl:NamedIndividual>
+        </owl:NamedIndividual>
     
 
     <!-- http://www.semanticweb.org/lenovo/ontologies/2026/9/untitled-ontology-8#Wireless_Charger -->
@@ -5579,6 +6087,7 @@
         <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-8:jumlahPenumpang>
         <untitled-ontology-8:namaMobil>Wuling Air EV Long Range</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
         <skos:altLabel xml:lang="id">Wuling Air EV Long Range</skos:altLabel>
         <skos:altLabel xml:lang="id">Air EV</skos:altLabel>
         <skos:altLabel xml:lang="id">Wuling Air EV</skos:altLabel>
@@ -5586,9 +6095,13 @@
         <skos:altLabel xml:lang="id">mobil listrik wuling</skos:altLabel>
         <skos:altLabel xml:lang="id">wuling ev</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil ev mungil</skos:altLabel>
-        <skos:altLabel xml:lang="en">EV</skos:altLabel>
-        <skos:altLabel xml:lang="en">electric vehicle</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">EV</skos:altLabel>
+        <skos:altLabel xml:lang="id">electric vehicle</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil listrik</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan listrik</skos:altLabel>
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5618,16 +6131,23 @@
         <untitled-ontology-8:jumlahPenumpang rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-8:jumlahPenumpang>
         <untitled-ontology-8:namaMobil>Wuling BinguoEV Premium Range</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Wuling BinguoEV Premium Range</skos:altLabel>
         <skos:altLabel xml:lang="id">Wuling BinguoEV</skos:altLabel>
         <skos:altLabel xml:lang="id">Binguo EV</skos:altLabel>
         <skos:altLabel xml:lang="id">Wuling Binguo</skos:altLabel>
         <skos:altLabel xml:lang="id">Binguo</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil listrik binguo</skos:altLabel>
         <skos:altLabel xml:lang="id">binguo ev hatchback</skos:altLabel>
-        <skos:altLabel xml:lang="en">EV binguo</skos:altLabel>
+        <skos:altLabel xml:lang="id">EV binguo</skos:altLabel>
         <skos:altLabel xml:lang="id">wuling listrik</skos:altLabel>
-        <skos:altLabel xml:lang="en">EV</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">EV</skos:altLabel>
+        <skos:altLabel xml:lang="id">electric vehicle</skos:altLabel>
+        <skos:altLabel xml:lang="id">mobil listrik</skos:altLabel>
+        <skos:altLabel xml:lang="id">kendaraan listrik</skos:altLabel>
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -5659,6 +6179,8 @@
         <untitled-ontology-8:kapasitasMesin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1451</untitled-ontology-8:kapasitasMesin>
         <untitled-ontology-8:namaMobil>Wuling Cortez EX 1.5T</untitled-ontology-8:namaMobil>
         <untitled-ontology-8:tahunProduksi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</untitled-ontology-8:tahunProduksi>
+
+        <skos:altLabel xml:lang="id">Wuling Cortez EX 1.5T</skos:altLabel>
         <skos:altLabel xml:lang="id">Wuling Cortez</skos:altLabel>
         <skos:altLabel xml:lang="id">Cortez</skos:altLabel>
         <skos:altLabel xml:lang="id">Wuling Cortez 1.5T</skos:altLabel>
@@ -5666,7 +6188,9 @@
         <skos:altLabel xml:lang="id">mpv wuling cortez</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga wuling</skos:altLabel>
         <skos:altLabel xml:lang="id">mobil keluarga</skos:altLabel>
-
+        <skos:altLabel xml:lang="id">matic</skos:altLabel>
+        <skos:altLabel xml:lang="id">otomatis</skos:altLabel>
+        <skos:altLabel xml:lang="id">AT</skos:altLabel>
     </owl:NamedIndividual>
     
 

@@ -31,6 +31,7 @@ import java.io.InputStream;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -173,10 +174,14 @@ public class MobilController {
                 .toList();
         for (int i = 0; i < tokens.size(); i++) {
             String fields = Stream.of("?car", "?p%1$d", "?pl%1$d", "?v%1$d", "?l%1$d")
-                    .map(x -> "CONTAINS(LCASE(STR(" + x + ")), ?q%1$d)").collect(Collectors.joining(" || "));
-            sparql.append(("FILTER EXISTS { ?car ?p%1$d ?v%1$d . OPTIONAL { ?v%1$d (rdfs:label|skos:altLabel) ?l%1$d } "
-                    + "OPTIONAL { ?p%1$d (rdfs:label|skos:altLabel) ?pl%1$d } FILTER(" + fields + ") } ").formatted(i));
-            sparql.setLiteral("q" + i, tokens.get(i));
+                .map(x -> "REGEX(LCASE(STR(" + x + ")), ?q%1$d)").collect(Collectors.joining(" || "));
+            sparql.append(("FILTER (EXISTS { ?car skos:altLabel ?alt%1$d . "
+                + "FILTER(REGEX(LCASE(STR(?alt%1$d)), ?q%1$d)) } "
+                + "|| EXISTS { ?car ?p%1$d ?v%1$d . "
+                + "FILTER(?p%1$d != owl:sameAs && ?p%1$d != owl:differentFrom) "
+                + "OPTIONAL { ?v%1$d rdfs:label ?l%1$d } "
+                + "OPTIONAL { ?p%1$d rdfs:label ?pl%1$d } FILTER(" + fields + ") }) ").formatted(i));
+            sparql.setLiteral("q" + i, wordPattern(tokens.get(i)));
         }
 
         // Filter pilihan
@@ -195,6 +200,15 @@ public class MobilController {
             ex.execSelect().forEachRemaining(s -> result.add(s.getResource("car")));
         }
         return result;
+    }
+
+    private String wordPattern(String token) {
+        StringBuilder escaped = new StringBuilder();
+        for (char character : token.toCharArray()) {
+            if ("\\.^$|?*+()[]{}".indexOf(character) >= 0) escaped.append('\\');
+            escaped.append(character);
+        }
+        return "(^|[^a-z0-9])" + escaped + "([^a-z0-9]|$)";
     }
 
     private Mobil summary(Resource r) {

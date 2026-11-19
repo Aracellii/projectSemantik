@@ -833,25 +833,28 @@ select:focus {
 
 /* Tabs */
 .tabs-nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   background: #ffffff;
   border-bottom: 1px solid var(--border-glass);
-  padding: 4px 16px 0;
-  overflow-x: auto;
-  gap: 4px;
+  padding: 4px 8px 0;
+  min-width: 0;
 }
 
 .tab-btn {
   background: none;
   border: none;
-  padding: 12px 14px;
+  min-width: 0;
+  padding: 9px 3px;
   font-family: var(--font-main);
-  font-size: 13px;
+  font-size: 10px;
+  line-height: 1.25;
   font-weight: 600;
   color: var(--text-muted);
   cursor: pointer;
   border-bottom: 2px solid transparent;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
   transition: var(--transition-fast);
 }
 
@@ -893,6 +896,10 @@ select:focus {
   background: #ffffff;
 }
 
+.fact-box:has(.fact-price) {
+  grid-column: 1 / -1;
+}
+
 .fact-label {
   font-size: 11px;
   text-transform: uppercase;
@@ -913,6 +920,8 @@ select:focus {
   color: #047857;
   font-family: var(--font-mono);
   font-size: 16px;
+  white-space: nowrap;
+  word-break: normal;
 }
 
 /* Synonyms Box */
