@@ -179,7 +179,8 @@ public class MobilController {
             sparql.setLiteral("q" + i, tokens.get(i));
         }
 
-        // Filter pilihan       Map<String, String> params = Map.of("brand", blank(brand), "fuel", blank(fuel),
+        // Filter pilihan
+        Map<String, String> params = Map.of("brand", blank(brand), "fuel", blank(fuel),
                 "passengers", blank(passengers), "category", blank(category));
         params.forEach((name, value) -> {
             boolean byProperty = facetProps.containsKey(name);
