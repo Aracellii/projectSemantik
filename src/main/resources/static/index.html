@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoSemantik — Semantic Web Ontologi Mobil & Truk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="brand-container">
+      <div class="brand-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+          <circle cx="7" cy="17" r="2"/>
+          <path d="M9 17h6"/>
+          <circle cx="17" cy="17" r="2"/>
+        </svg>
+      </div>
+      <div>
+        <div class="badge-tag">ONTOLOGY VEHICLE CATALOG</div>
+        <h1 class="brand-title">Auto<span>Semantik</span></h1>
+        <p class="brand-subtitle">Katalog Kendaraan Berbasis Web Semantik & Jena OWL Reasoner</p>
+      </div>
+    </div>
+    <div class="header-stats">
+      <div class="stat-chip">
+        <span class="stat-label">Model Terdaftar</span>
+        <strong id="stat-total" class="stat-value">75</strong>
+      </div>
+      <div class="stat-chip">
+        <span class="stat-label">Pilihan Aktif</span>
+        <strong id="shown" class="stat-value">0</strong>
+      </div>
+      <div class="stat-chip tech-chip">
+        <span class="stat-label">OWL / SKOS Engine</span>
+        <strong class="stat-value">Jena Reasoner</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-container">
+    <!-- Filter Bar -->
+    <section class="filters-card glass-panel">
+      <div class="search-row">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input id="search" type="search" placeholder="Cari nama, brand, jenis, atau sinonim (cth: L300, truk bak, EV, matic, mobil keluarga, bensin)..." autocomplete="off" list="search-hints">
+          <datalist id="search-hints">
+            <option value="L300">
+            <option value="truk bak">
+            <option value="mobil keluarga">
+            <option value="pickup">
+            <option value="EV">
+            <option value="matic">
+            <option value="bensin">
+            <option value="solar">
+            <option value="hybrid">
+            <option value="tronton">
+            <option value="dump truck">
+            <option value="Avanza">
+            <option value="Innova Zenix">
+            <option value="Fortuner">
+            <option value="Pajero">
+          </datalist>
+          <button id="clear-search" class="clear-btn" title="Hapus pencarian" type="button">&times;</button>
+        </div>
+
+        <div class="select-group">
+          <div class="select-wrapper">
+            <label for="category">Kategori</label>
+            <select id="category">
+              <option value="">Semua Kategori</option>
+            </select>
+          </div>
+
+          <div class="select-wrapper">
+            <label for="brand">Merk</label>
+            <select id="brand">
+              <option value="">Semua Merk</option>
+            </select>
+          </div>
+
+          <div class="select-wrapper">
+            <label for="fuel">Bahan Bakar</label>
+            <select id="fuel">
+              <option value="">Semua Bahan Bakar</option>
+            </select>
+          </div>
+
+          <button id="reset" class="reset-btn" title="Reset Semua Filter" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="1 4 1 10 7 10"/>
+              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+            </svg>
+            <span>Reset</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Synonym Chips -->
+      <div class="quick-tags">
+        <span class="quick-tags-label">Filter Cepat (SKOS Synonyms):</span>
+        <div class="quick-tags-list">
+          <button type="button" class="tag-chip" data-query="EV">⚡ Listrik / EV</button>
+          <button type="button" class="tag-chip" data-query="mobil keluarga">👨‍👩‍👧 Mobil Keluarga</button>
+          <button type="button" class="tag-chip" data-query="L300">📦 L300</button>
+          <button type="button" class="tag-chip" data-query="pickup">🛻 Pickup</button>
+          <button type="button" class="tag-chip" data-query="truk bak">🚛 Truk Bak</button>
+          <button type="button" class="tag-chip" data-query="matic">⚙️ Matic / AT</button>
+          <button type="button" class="tag-chip" data-query="hybrid">🔋 Hybrid</button>
+          <button type="button" class="tag-chip" data-query="bensin">⛽ Bensin</button>
+          <button type="button" class="tag-chip" data-query="solar">🚜 Diesel / Solar</button>
+          <button type="button" class="tag-chip" data-query="dump">⛏️ Dump Truck</button>
+          <button type="button" class="tag-chip" data-query="tronton">🛣️ Tronton</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workspace: Catalog Cards & Detail Pane -->
+    <div class="workspace">
+      <!-- Catalog Section -->
+      <section class="catalog-section">
+        <div class="catalog-header">
+          <div class="catalog-title-group">
+            <h2>Koleksi Kendaraan</h2>
+            <span class="count-badge" id="results-count">Menampilkan <span id="shown-inner">0</span> unit</span>
+          </div>
+        </div>
+
+        <div id="car-list" class="car-grid">
+          <!-- Dynamic cards or skeleton injected here -->
+        </div>
+      </section>
+
+      <!-- Inspector Detail Section -->
+      <aside class="detail-sidebar">
+        <div class="detail-card glass-panel" id="detail">
+          <div class="empty-state">
+            <div class="empty-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h3>Pilih Kendaraan</h3>
+            <p>Klik salah satu kartu kendaraan di sebelah kiri untuk menelusuri spesifikasi lengkap, komponen, relasi ontologi, dan triple RDF Jena.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p>Semantic Web Automotive Catalog &copy; 2026 &bull; Powered by Apache Jena OWL Reasoner &amp; SKOS Synonyms</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
