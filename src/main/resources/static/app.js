@@ -4,21 +4,21 @@ const $=selector=>document.querySelector(selector);
 // Fungsi 'formatName': Ubah Format 
 // Contoh: 'BlindVan' jadi 'Blind Van', 'ChasisMonokok' jadi 'Chasis Monokok',
 function formatName(text){
-  // Kalau bukan teks, angka murni (tahun/penumpang), atau path foto (/Foto/...), lewati aja
+  // Kalau bukan teks skip
   if(!text||typeof text!=='string')return text;
   if(text.startsWith('/')||text.startsWith('http://')||text.startsWith('https://'))return text;
   if(/^\d+$/.test(text.trim()))return text;
 
-  // 1. Ganti underscore (_) jadi spasi biasa 
+  // 1. Ganti underscore jadi spasi 
   let s=text.replace(/_/g,' ');
 
-  // 2. Selipkan spasi tiap ada huruf kecil nempel huruf besar (contoh: BlindVan -> Blind Van)
+  // 2. Selipkan spasi tiap ada huruf kecil nempel huruf besar 
   s=s.replace(/([a-z0-9])([A-Z])/g,'$1 $2');
 
-  // 3. Jaga singkatan huruf besar biar tetap rapi (contoh: ABSTank -> ABS Tank)
+  // 3. tambah spasi huruf besar
   s=s.replace(/([A-Z]+)([A-Z][a-z])/g,'$1 $2');
 
-  // 4. Bersihkan spasi dobel dan huruf paling depan tetap kapital
+  // 4. Bersihkan spasi dobel 
   s=s.replace(/\s+/g,' ').trim();
   if(s.length>0){s=s.charAt(0).toUpperCase()+s.slice(1);}
   return s;
@@ -177,11 +177,11 @@ function makeTable(headers,rows){
 
 async function init(){
   try{
-    state.cars=await api('/api/mobil'); $('#total').textContent=state.cars.length;
+    state.cars=await api('/api/mobil');
     // Kategori difilter agar MobilBerdasarkanJenis tidak masuk ke dropdown
     fillSelect('#category',state.cars.flatMap(car=>cleanCategories(car.categories))); fillSelect('#brand',state.cars.map(car=>car.brand)); fillSelect('#fuel',state.cars.map(car=>car.fuel));
     renderList(state.cars);
-  }catch(error){const message=document.createElement('p');message.className='error';message.textContent='Ontology gagal dimuat.';$('#car-list').replaceChildren(message);}
+  }catch(error){console.error('Gagal memuat daftar mobil dari /api/mobil:',error);const message=document.createElement('p');message.className='error';message.textContent=`Daftar mobil gagal dimuat (${error.message}). Pastikan server berjalan dan ontology tersedia.`;$('#car-list').replaceChildren(message);}
 }
 
 ['#search','#category','#brand','#fuel'].forEach(selector=>$(selector).addEventListener('input',refreshResults));
