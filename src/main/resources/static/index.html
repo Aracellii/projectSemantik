@@ -33,10 +33,6 @@
     </div>
     <div class="header-stats">
       <div class="stat-chip">
-        <span class="stat-label">Model Terdaftar</span>
-        <strong id="stat-total" class="stat-value">75</strong>
-      </div>
-      <div class="stat-chip">
         <span class="stat-label">Pilihan Aktif</span>
         <strong id="shown" class="stat-value">0</strong>
       </div>
@@ -56,30 +52,7 @@
             <circle cx="11" cy="11" r="8"/>
             <line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
-          <input id="search" type="search" placeholder="Cari mobil, misalnya: 7 kursi, matic bensin, pickup..." autocomplete="off" list="search-hints">
-          <datalist id="search-hints">
-            <option value="truk box">
-            <option value="mobil keluarga">
-            <option value="pickup">
-            <option value="EV">
-            <option value="matic">
-            <option value="bensin">
-            <option value="solar">
-            <option value="hybrid">
-            <option value="tronton">
-            <option value="dump truck">
-            <option value="Avanza">
-            <option value="Innova Zenix">
-            <option value="Fortuner">
-            <option value="Pajero">
-            <option value="mobil antara 100 sampai 200 juta">
-            <option value="mobil termurah">
-            <option value="mobil termahal">
-            <option value="mobil 7 kursi">
-            <option value="mobil keluarga matic">
-            <option value="SUV diesel">
-            <option value="mobil listrik murah">
-          </datalist>
+          <input id="search" type="search" placeholder="Cari mobil, misalnya: 7 kursi, matic bensin, pickup..." autocomplete="off">
           <button id="clear-search" class="clear-btn" title="Hapus pencarian" type="button">&times;</button>
         </div>
 
@@ -115,27 +88,6 @@
         </div>
       </div>
 
-      <!-- Quick Synonym Chips -->
-      <div class="quick-tags">
-          <span class="quick-tags-label">Filter Cepat:</span>
-        <div class="quick-tags-list">
-          <button type="button" class="tag-chip" data-query="EV">⚡ Listrik / EV</button>
-          <button type="button" class="tag-chip" data-query="mobil keluarga">👨‍👩‍👧 Mobil Keluarga</button>
-          <button type="button" class="tag-chip" data-query="pickup">🛻 Pickup</button>
-          <button type="button" class="tag-chip" data-query="truk box">🚛 Truk Box</button>
-          <button type="button" class="tag-chip" data-query="matic">⚙️ Matic / AT</button>
-          <button type="button" class="tag-chip" data-query="hybrid">🔋 Hybrid</button>
-          <button type="button" class="tag-chip" data-query="bensin">⛽ Bensin</button>
-          <button type="button" class="tag-chip" data-query="solar">🚜 Diesel / Solar</button>
-          <button type="button" class="tag-chip" data-query="dump">⛏️ Dump Truck</button>
-          <button type="button" class="tag-chip" data-query="tronton">🛣️ Tronton</button>
-          <button type="button" class="tag-chip" data-query="mobil antara 100 sampai 200 juta">💰 100–200 juta</button>
-          <button type="button" class="tag-chip" data-query="mobil termurah">📉 Termurah</button>
-          <button type="button" class="tag-chip" data-query="mobil termahal">📈 Termahal</button>
-          <button type="button" class="tag-chip" data-query="mobil 7 kursi">👥 7+ Kursi</button>
-          <button type="button" class="tag-chip" data-query="SUV diesel">🚙 SUV Diesel</button>
-        </div>
-      </div>
     </section>
 
     <!-- Workspace: Catalog Cards & Detail Pane -->
@@ -166,16 +118,12 @@
               </svg>
             </div>
             <h3>Pilih Kendaraan</h3>
-            <p>Klik salah satu kartu kendaraan di sebelah kiri untuk menelusuri spesifikasi lengkap, komponen, relasi ontologi, dan triple RDF Jena.</p>
+            <p>Klik salah satu kartu kendaraan di sebelah kiri untuk melihat ringkasan informasi kendaraan.</p>
           </div>
         </div>
       </aside>
     </div>
   </main>
-
-  <footer class="app-footer">
-    <p>Semantic Web Automotive Catalog &copy; 2026 &bull; Powered by Apache Jena OWL Reasoner &amp; SKOS Synonyms</p>
-  </footer>
 
   <script src="/app.js"></script>
 </body>

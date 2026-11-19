@@ -8,7 +8,6 @@ const state = {
   cars: [],
   results: [],
   selected: null,
-  tab: 'summary',
   request: 0,
   controller: null,
   debounceTimer: null
@@ -437,7 +436,6 @@ function refreshResults() {
 // Select car and load details
 async function selectCar(car) {
   state.selected = car;
-  state.tab = 'summary';
 
   // Highlight selected card
   $$('.car-card').forEach(el => el.classList.remove('selected'));
@@ -533,33 +531,7 @@ function renderDetail(car) {
   hero.append(title, subtitle);
   detail.append(hero);
 
-  // Tabs Navigation
-  const tabs = document.createElement('nav');
-  tabs.className = 'tabs-nav';
-  [
-    ['summary', 'Ringkasan'],
-    ['properties', 'Spesifikasi'],
-    ['components', 'Komponen'],
-    ['relations', 'Relasi Ontologi'],
-    ['triples', 'Triple RDF']
-  ].forEach(([key, label]) => {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'tab-btn' + (state.tab === key ? ' active' : '');
-    btn.textContent = label;
-    btn.onclick = () => {
-      state.tab = key;
-      renderDetail(car);
-    };
-    tabs.append(btn);
-  });
-  detail.append(tabs);
-
-  // Tab Contents
-  if (state.tab === 'summary') renderSummary(detail, car);
-  if (state.tab === 'properties') loadProperties(detail, car);
-  if (state.tab === 'components' || state.tab === 'relations') loadRows(detail, car, '/relations');
-  if (state.tab === 'triples') loadRows(detail, car, '/triples');
+  renderSummary(detail, car);
 }
 
 // Summary Tab View
@@ -609,7 +581,7 @@ function renderSummary(detail, car) {
 
   panel.append(grid);
 
-  // SKOS Synonyms / altLabels section
+  // Tags section
   const alts = car.properties?.altLabel;
   if (alts && alts.length) {
     const synBox = document.createElement('div');
@@ -622,7 +594,7 @@ function renderSummary(detail, car) {
         <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
         <line x1="7" y1="7" x2="7.01" y2="7"></line>
       </svg>
-      SKOS Synonyms &amp; AltLabels:
+      Tags:
     `;
 
     const synList = document.createElement('div');
@@ -646,104 +618,6 @@ function renderSummary(detail, car) {
   }
 
   detail.append(panel);
-}
-
-// Properties Tab
-async function loadProperties(detail, car) {
-  const panel = document.createElement('div');
-  panel.className = 'detail-panel';
-  panel.innerHTML = '<p class="stat-label">Memuat spesifikasi OWL...</p>';
-  detail.append(panel);
-
-  try {
-    const rows = await api(`/api/mobil/${encodeURIComponent(car.id)}/properties`);
-    const flatRows = Object.entries(rows).flatMap(([key, values]) =>
-      values.map(val => [formatName(key), formatName(val)])
-    );
-    panel.replaceChildren(makeTable(['Properti Ontologi', 'Nilai'], flatRows));
-  } catch (error) {
-    panel.innerHTML = '<p class="stat-label">Spesifikasi tidak tersedia.</p>';
-  }
-}
-
-// Relations & Triples Tabs
-async function loadRows(detail, car, path) {
-  const panel = document.createElement('div');
-  panel.className = 'detail-panel';
-  panel.innerHTML = '<p class="stat-label">Memuat graph ontologi...</p>';
-  detail.append(panel);
-
-  try {
-    const rows = await api(`/api/mobil/${encodeURIComponent(car.id)}${path}`);
-    if (path === '/triples') {
-      panel.replaceChildren(
-        makeTable(['Subjek (Subject)', 'Predikat (Predicate)', 'Objek (Object)'],
-          rows.map(r => [r.subject, r.predicate, r.object]),
-          true
-        )
-      );
-    } else {
-      panel.replaceChildren(
-        makeTable(['Subjek', 'Hubungan Predikat', 'Entitas Objek'],
-          rows.map(r => [
-            formatName(r.subject.replace(/^.*[#/]/, '')),
-            formatName(r.predicate.replace(/^.*[#/]/, '')),
-            formatName(r.object.replace(/^.*[#/]/, ''))
-          ])
-        )
-      );
-    }
-  } catch (error) {
-    panel.innerHTML = '<p class="stat-label">Data relasi tidak tersedia.</p>';
-  }
-}
-
-// Reusable Semantic Table Generator
-function makeTable(headers, rows, isUriTable = false) {
-  const wrap = document.createElement('div');
-  wrap.className = 'table-wrap';
-
-  const table = document.createElement('table');
-  const thead = document.createElement('thead');
-  const headRow = document.createElement('tr');
-
-  headers.forEach(h => {
-    const th = document.createElement('th');
-    th.textContent = h;
-    headRow.append(th);
-  });
-  thead.append(headRow);
-  table.append(thead);
-
-  const tbody = document.createElement('tbody');
-  if (!rows.length) {
-    const emptyRow = document.createElement('tr');
-    const td = document.createElement('td');
-    td.colSpan = headers.length;
-    td.textContent = 'Tidak ada triple atau relasi terkait.';
-    td.style.color = 'var(--text-muted)';
-    emptyRow.append(td);
-    tbody.append(emptyRow);
-  } else {
-    rows.forEach(row => {
-      const tr = document.createElement('tr');
-      row.forEach((val, idx) => {
-        const td = document.createElement('td');
-        td.textContent = val;
-        if (isUriTable) {
-          td.className = 'uri-cell';
-        } else if (idx === 0) {
-          td.className = 'pred-cell';
-        }
-        tr.append(td);
-      });
-      tbody.append(tr);
-    });
-  }
-
-  table.append(tbody);
-  wrap.append(table);
-  return wrap;
 }
 
 // Debounced Search Handler
@@ -771,10 +645,6 @@ async function init() {
     fillSelect('#category', state.cars.flatMap(car => cleanCategories(car.categories)));
     fillSelect('#brand', state.cars.map(car => car.brand));
     fillSelect('#fuel', state.cars.map(car => car.fuel));
-
-    // Update total counter
-    const statTotal = $('#stat-total');
-    if (statTotal) statTotal.textContent = state.cars.length;
 
     renderList(state.cars);
   } catch (error) {
@@ -804,7 +674,6 @@ async function init() {
     clearBtn.onclick = () => {
       $('#search').value = '';
       clearBtn.style.display = 'none';
-      $$('.tag-chip').forEach(c => c.classList.remove('active'));
       refreshResults();
     };
   }
@@ -816,26 +685,8 @@ async function init() {
       if (el) el.value = '';
     });
     if (clearBtn) clearBtn.style.display = 'none';
-    $$('.tag-chip').forEach(c => c.classList.remove('active'));
     refreshResults();
   };
-
-  // Quick Synonym Chips
-  $$('.tag-chip').forEach(chip => {
-    chip.onclick = () => {
-      const query = chip.dataset.query;
-      const searchInput = $('#search');
-      if (chip.classList.contains('active')) {
-        chip.classList.remove('active');
-        searchInput.value = '';
-      } else {
-        $$('.tag-chip').forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        searchInput.value = query;
-      }
-      handleSearchInput();
-    };
-  });
 }
 
 // Start application
