@@ -35,13 +35,12 @@ function fillSelect(id,values){
   const select=$(id);
   [...new Set(values.filter(Boolean))].sort().forEach(value=>{
     const option=document.createElement('option');
-    option.value=value; // Nilai asli ontologi dikirim ke backend (misal: "BlindVan")
-    option.textContent=formatName(value); // Tapi teks yang dibaca user ada spasinya ("Blind Van")
+    option.value=value; 
+    option.textContent=formatName(value); 
     select.append(option);
   });
 }
-
-// Filter untuk menyembunyikan kelas perantara/induk yang tidak perlu ditampilkan ke user
+//hide
 const cleanCategories = cats => (cats || []).filter(c => c !== 'MobilBerdasarkanJenis');
 
 function renderList(cars){
